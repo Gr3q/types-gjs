@@ -1,0 +1,24 @@
+{
+  "name": "@types/gjs",
+  "version": "1.0.0",
+  "description": "Typescript definitions for GJS - Gnome JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr3q/types-gjs.git"
+  },
+  "keywords": [
+    "typescript",
+    "gjs",
+    "gnome"
+  ],
+  "author": "Attila Greguss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gr3q/types-gjs/issues"
+  },
+  "homepage": "https://github.com/Gr3q/types-gjs#readme"
+}
