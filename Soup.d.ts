@@ -917,7 +917,7 @@ declare namespace imports.gi.Soup {
 		public data: string;
 		public length: number;
 
-
+		public append(data: Uint8Array): void;
 		public append(use: MemoryUse, data: number[], length: number): void;
 		public append_buffer(buffer: Buffer): void;
 		public append_take(data: number[], length: number): void;
@@ -1550,10 +1550,10 @@ declare namespace imports.gi.Soup {
 
 
 	enum MemoryUse {
-		static = 0,
-		take = 1,
-		copy = 2,
-		temporary = 3
+		STATIC = 0,
+		TAKE = 1,
+		COPY = 2,
+		TEMPORARY = 3
 	}
 
 
