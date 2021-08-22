@@ -14171,7 +14171,7 @@ declare namespace imports.gi.Gtk {
     
     
     
-    function init (argc: number, argv: string[]): void;
+    function init (argc: number | null, argv?: string[]): void;
     
     
     
