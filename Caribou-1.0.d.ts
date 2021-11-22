@@ -20,7 +20,7 @@ declare namespace imports.gi.Caribou {
 		connect(signal: "group-changed", callback: (owner: this, gid: number, group: string, variant: string) => void): number;
 		connect(signal: "config-changed", callback: (owner: this) => void): number;
 
-		connect(signal: "notify::display", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::display", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -102,9 +102,9 @@ declare namespace imports.gi.Caribou {
 		connect(signal: "group-added", callback: (owner: this, name: string) => void): number;
 		connect(signal: "group-removed", callback: (owner: this, name: string) => void): number;
 
-		connect(signal: "notify::active_group", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::keyboard_type", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::keyboard_file", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::active_group", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::keyboard_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::keyboard_file", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -164,9 +164,9 @@ declare namespace imports.gi.Caribou {
 		get_levels(): [ string[], number ];
 		get_level(level_name: string): Caribou.LevelModel;
 		get_active_level(): string;
-		connect(signal: "notify::active_level", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::group", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::variant", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::active_level", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::group", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::variant", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -200,7 +200,7 @@ declare namespace imports.gi.Caribou {
 		get_mode(): string;
 		connect(signal: "level-toggled", callback: (owner: this, new_level: string) => void): number;
 
-		connect(signal: "notify::mode", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::mode", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -282,17 +282,17 @@ declare namespace imports.gi.Caribou {
 		connect(signal: "key-hold-end", callback: (owner: this) => void): number;
 		connect(signal: "key-hold", callback: (owner: this) => void): number;
 
-		connect(signal: "notify::align", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::width", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::toggle", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::repeatable", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::is_modifier", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::show_subkeys", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::name", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::keyval", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::text", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::label", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::modifier_state", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::align", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::width", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::toggle", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::repeatable", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is_modifier", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::show_subkeys", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::keyval", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::text", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::label", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::modifier_state", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -382,16 +382,16 @@ declare namespace imports.gi.Caribou {
 		set_autorestart(value: boolean): void;
 		get_inverse_scanning(): boolean;
 		set_inverse_scanning(value: boolean): void;
-		connect(signal: "notify::bind_settings", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::scan_grouping", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::scan_enabled", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::step_time", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::switch_device", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::keyboard_key", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::mouse_button", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::scan_cycles", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::autorestart", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::inverse_scanning", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::bind_settings", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::scan_grouping", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::scan_enabled", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::step_time", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::switch_device", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::keyboard_key", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::mouse_button", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::scan_cycles", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::autorestart", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::inverse_scanning", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -444,167 +444,6 @@ declare namespace imports.gi.Caribou {
 		public constructor(options?: Partial<ScannableGroupInitOptions>);
 	}
 
-	export interface DisplayAdapterClassInitOptions {}
-	interface DisplayAdapterClass {}
-	class DisplayAdapterClass {
-		public constructor(options?: Partial<DisplayAdapterClassInitOptions>);
-		public keyval_press: {(self: Caribou.DisplayAdapter, keyval: number): void;};
-		public keyval_release: {(self: Caribou.DisplayAdapter, keyval: number): void;};
-		public mod_lock: {(self: Caribou.DisplayAdapter, mask: number): void;};
-		public mod_unlock: {(self: Caribou.DisplayAdapter, mask: number): void;};
-		public mod_latch: {(self: Caribou.DisplayAdapter, mask: number): void;};
-		public mod_unlatch: {(self: Caribou.DisplayAdapter, mask: number): void;};
-		public get_current_group: {(self: Caribou.DisplayAdapter): [ number, string, string ];};
-		public get_groups: {(self: Caribou.DisplayAdapter): [ string[], number, string[], number ];};
-		public register_key_func: {(self: Caribou.DisplayAdapter, keyval: number, func: Caribou.KeyButtonCallback | null, func_target: any | null): void;};
-		public register_button_func: {(self: Caribou.DisplayAdapter, button: number, func: Caribou.KeyButtonCallback | null, func_target: any | null): void;};
-	}
-
-	export interface DisplayAdapterPrivateInitOptions {}
-	interface DisplayAdapterPrivate {}
-	class DisplayAdapterPrivate {
-		public constructor(options?: Partial<DisplayAdapterPrivateInitOptions>);
-	}
-
-	export interface NullAdapterClassInitOptions {}
-	interface NullAdapterClass {}
-	class NullAdapterClass {
-		public constructor(options?: Partial<NullAdapterClassInitOptions>);
-	}
-
-	export interface NullAdapterPrivateInitOptions {}
-	interface NullAdapterPrivate {}
-	class NullAdapterPrivate {
-		public constructor(options?: Partial<NullAdapterPrivateInitOptions>);
-	}
-
-	export interface XAdapterClassInitOptions {}
-	interface XAdapterClass {}
-	class XAdapterClass {
-		public constructor(options?: Partial<XAdapterClassInitOptions>);
-	}
-
-	export interface XAdapterPrivateInitOptions {}
-	interface XAdapterPrivate {}
-	class XAdapterPrivate {
-		public constructor(options?: Partial<XAdapterPrivateInitOptions>);
-	}
-
-	export interface KeyboardModelClassInitOptions {}
-	interface KeyboardModelClass {}
-	class KeyboardModelClass {
-		public constructor(options?: Partial<KeyboardModelClassInitOptions>);
-	}
-
-	export interface KeyboardModelPrivateInitOptions {}
-	interface KeyboardModelPrivate {}
-	class KeyboardModelPrivate {
-		public constructor(options?: Partial<KeyboardModelPrivateInitOptions>);
-	}
-
-	export interface KeyboardServiceClassInitOptions {}
-	interface KeyboardServiceClass {}
-	class KeyboardServiceClass {
-		public constructor(options?: Partial<KeyboardServiceClassInitOptions>);
-		public set_cursor_location: {(self: Caribou.KeyboardService, x: number, y: number, w: number, h: number): void;};
-		public set_entry_location: {(self: Caribou.KeyboardService, x: number, y: number, w: number, h: number): void;};
-		public show: {(self: Caribou.KeyboardService, timestamp: number): void;};
-		public hide: {(self: Caribou.KeyboardService, timestamp: number): void;};
-		public name_lost: {(self: Caribou.KeyboardService, name: string): void;};
-	}
-
-	export interface KeyboardServicePrivateInitOptions {}
-	interface KeyboardServicePrivate {}
-	class KeyboardServicePrivate {
-		public constructor(options?: Partial<KeyboardServicePrivateInitOptions>);
-	}
-
-	export interface GroupModelClassInitOptions {}
-	interface GroupModelClass {}
-	class GroupModelClass {
-		public constructor(options?: Partial<GroupModelClassInitOptions>);
-	}
-
-	export interface GroupModelPrivateInitOptions {}
-	interface GroupModelPrivate {}
-	class GroupModelPrivate {
-		public constructor(options?: Partial<GroupModelPrivateInitOptions>);
-	}
-
-	export interface LevelModelClassInitOptions {}
-	interface LevelModelClass {}
-	class LevelModelClass {
-		public constructor(options?: Partial<LevelModelClassInitOptions>);
-	}
-
-	export interface LevelModelPrivateInitOptions {}
-	interface LevelModelPrivate {}
-	class LevelModelPrivate {
-		public constructor(options?: Partial<LevelModelPrivateInitOptions>);
-	}
-
-	export interface RowModelClassInitOptions {}
-	interface RowModelClass {}
-	class RowModelClass {
-		public constructor(options?: Partial<RowModelClassInitOptions>);
-	}
-
-	export interface RowModelPrivateInitOptions {}
-	interface RowModelPrivate {}
-	class RowModelPrivate {
-		public constructor(options?: Partial<RowModelPrivateInitOptions>);
-	}
-
-	export interface KeyModelClassInitOptions {}
-	interface KeyModelClass {}
-	class KeyModelClass {
-		public constructor(options?: Partial<KeyModelClassInitOptions>);
-	}
-
-	export interface KeyModelPrivateInitOptions {}
-	interface KeyModelPrivate {}
-	class KeyModelPrivate {
-		public constructor(options?: Partial<KeyModelPrivateInitOptions>);
-	}
-
-	export interface ColumnModelClassInitOptions {}
-	interface ColumnModelClass {}
-	class ColumnModelClass {
-		public constructor(options?: Partial<ColumnModelClassInitOptions>);
-	}
-
-	export interface ColumnModelPrivateInitOptions {}
-	interface ColumnModelPrivate {}
-	class ColumnModelPrivate {
-		public constructor(options?: Partial<ColumnModelPrivateInitOptions>);
-	}
-
-	export interface ScannerClassInitOptions {}
-	interface ScannerClass {}
-	class ScannerClass {
-		public constructor(options?: Partial<ScannerClassInitOptions>);
-	}
-
-	export interface ScannerPrivateInitOptions {}
-	interface ScannerPrivate {}
-	class ScannerPrivate {
-		public constructor(options?: Partial<ScannerPrivateInitOptions>);
-	}
-
-	export interface ScannableGroupClassInitOptions {}
-	interface ScannableGroupClass {}
-	class ScannableGroupClass {
-		public constructor(options?: Partial<ScannableGroupClassInitOptions>);
-		public get_scan_children: {(self: Caribou.ScannableGroup): [ Caribou.IScannableItem[], number ];};
-		public child_select: {(self: Caribou.ScannableGroup): Caribou.IScannableItem | null;};
-	}
-
-	export interface ScannableGroupPrivateInitOptions {}
-	interface ScannableGroupPrivate {}
-	class ScannableGroupPrivate {
-		public constructor(options?: Partial<ScannableGroupPrivateInitOptions>);
-	}
-
 	export interface IScannableItemIfaceInitOptions {}
 	interface IScannableItemIface {}
 	class IScannableItemIface {
@@ -650,8 +489,8 @@ declare namespace imports.gi.Caribou {
 		set_scan_stepping(value: boolean): void;
 		get_scan_selected(): boolean;
 		set_scan_selected(value: boolean): void;
-		connect(signal: "notify::scan_stepping", callback: (owner: this, ...args: any) => number): number;
-		connect(signal: "notify::scan_selected", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::scan_stepping", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::scan_selected", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -691,7 +530,7 @@ declare namespace imports.gi.Caribou {
 		connect(signal: "step-item-changed", callback: (owner: this, step_item: Caribou.IScannableItem | null) => void): number;
 		connect(signal: "scan-cleared", callback: (owner: this) => void): number;
 
-		connect(signal: "notify::scan_grouping", callback: (owner: this, ...args: any) => number): number;
+		connect(signal: "notify::scan_grouping", callback: (owner: this, ...args: any) => void): number;
 
 	}
 

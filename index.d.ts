@@ -26,8 +26,7 @@
 /// <reference path="./extensions/Gio-2.0.d.ts" />
 /// <reference path="./extensions/GLib-2.0.d.ts" />
 /// <reference path="./extensions/GObject-2.0.d.ts" />
-/// <reference path="./extensions/Meta.d.ts" />
 /// <reference path="./extensions/Soup-2.4.d.ts" />
-/// <reference path="./extensions/St.d.ts" />
+/// <reference path="./extensions/St-1.0.d.ts" />
 
 declare function log(arg: any): void
