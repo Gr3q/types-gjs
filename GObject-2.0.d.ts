@@ -121,9 +121,9 @@ declare namespace imports.gi.GObject {
 		unbind(): void;
 		connect(signal: "notify::flags", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::source", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::source_property", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::source-property", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::target", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::target_property", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::target-property", callback: (owner: this, ...args: any) => void): number;
 
 	}
 

@@ -907,13 +907,13 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "startup", callback: (owner: this) => void): number;
 
-		connect(signal: "notify::application_id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::application-id", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::flags", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::inactivity_timeout", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_busy", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_registered", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_remote", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::resource_base_path", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::inactivity-timeout", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-busy", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-registered", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-remote", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::resource-base-path", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -1307,7 +1307,7 @@ declare namespace imports.gi.Gio {
 		 * @param exit_status the exit status
 		 */
 		set_exit_status(exit_status: number): void;
-		connect(signal: "notify::is_remote", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-remote", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -1594,7 +1594,7 @@ declare namespace imports.gi.Gio {
 		 * @param size a #gsize
 		 */
 		set_buffer_size(size: number): void;
-		connect(signal: "notify::buffer_size", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::buffer-size", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -1676,8 +1676,8 @@ declare namespace imports.gi.Gio {
 		 * @param size a #gsize.
 		 */
 		set_buffer_size(size: number): void;
-		connect(signal: "notify::auto_grow", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::buffer_size", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::auto-grow", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::buffer-size", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -2073,9 +2073,9 @@ declare namespace imports.gi.Gio {
 		 * @param use_fallback %TRUE to use fallbacks
 		 */
 		set_use_fallback(use_fallback: boolean): void;
-		connect(signal: "notify::from_charset", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::to_charset", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::use_fallback", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::from-charset", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::to-charset", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::use-fallback", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -3450,11 +3450,11 @@ declare namespace imports.gi.Gio {
 
 		connect(signal: "notify::capabilities", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::closed", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::exit_on_close", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::exit-on-close", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::flags", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::guid", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::stream", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::unique_name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::unique-name", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -3807,7 +3807,7 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "g-authorize-method", callback: (owner: this, invocation: DBusMethodInvocation) => boolean): number;
 
-		connect(signal: "notify::g_flags", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-flags", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -4616,12 +4616,12 @@ declare namespace imports.gi.Gio {
 
 		connect(signal: "notify::connection", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::flags", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::get_proxy_type_destroy_notify", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::get_proxy_type_func", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::get_proxy_type_user_data", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::get-proxy-type-destroy-notify", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::get-proxy-type-func", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::get-proxy-type-user-data", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::name_owner", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::object_path", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::name-owner", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::object-path", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -4886,7 +4886,7 @@ declare namespace imports.gi.Gio {
 		 */
 		unexport(object_path: string): boolean;
 		connect(signal: "notify::connection", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::object_path", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::object-path", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -4962,8 +4962,8 @@ declare namespace imports.gi.Gio {
 		 *   object is owned by #proxy.
 		 */
 		get_connection(): DBusConnection;
-		connect(signal: "notify::g_connection", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_object_path", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-connection", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-object-path", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -5062,7 +5062,7 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "authorize-method", callback: (owner: this, _interface: DBusInterfaceSkeleton, invocation: DBusMethodInvocation) => boolean): number;
 
-		connect(signal: "notify::g_object_path", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-object-path", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -5478,14 +5478,14 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "g-signal", callback: (owner: this, sender_name: string | null, signal_name: string, parameters: GLib.Variant) => void): number;
 
-		connect(signal: "notify::g_connection", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_default_timeout", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_flags", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_interface_info", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_interface_name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_name_owner", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::g_object_path", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-connection", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-default-timeout", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-flags", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-interface-info", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-interface-name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-name-owner", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::g-object-path", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -5773,8 +5773,8 @@ declare namespace imports.gi.Gio {
 
 		connect(signal: "notify::active", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::address", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::authentication_observer", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::client_address", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::authentication-observer", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::client-address", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::flags", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::guid", callback: (owner: this, ...args: any) => void): number;
 
@@ -6188,8 +6188,8 @@ declare namespace imports.gi.Gio {
 		 * @param type the type of new line return as #GDataStreamNewlineType.
 		 */
 		set_newline_type(type: DataStreamNewlineType): void;
-		connect(signal: "notify::byte_order", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::newline_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::byte-order", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::newline-type", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -6296,7 +6296,7 @@ declare namespace imports.gi.Gio {
 		 * @param order a %GDataStreamByteOrder.
 		 */
 		set_byte_order(order: DataStreamByteOrder): void;
-		connect(signal: "notify::byte_order", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::byte-order", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -7793,7 +7793,7 @@ declare namespace imports.gi.Gio {
 		connect(signal: "changed", callback: (owner: this, file: File, other_file: File | null, event_type: FileMonitorEvent) => void): number;
 
 		connect(signal: "notify::cancelled", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::rate_limit", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::rate-limit", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -8001,8 +8001,8 @@ declare namespace imports.gi.Gio {
 		 * @param close_base %TRUE to close the base stream.
 		 */
 		set_close_base_stream(close_base: boolean): void;
-		connect(signal: "notify::base_stream", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::close_base_stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::base-stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::close-base-stream", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::base_stream", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -8055,8 +8055,8 @@ declare namespace imports.gi.Gio {
 		 * @param close_base %TRUE to close the base stream.
 		 */
 		set_close_base_stream(close_base: boolean): void;
-		connect(signal: "notify::base_stream", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::close_base_stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::base-stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::close-base-stream", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::base_stream", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -8305,8 +8305,8 @@ declare namespace imports.gi.Gio {
 		 */
 		splice_async(stream2: IOStream, flags: IOStreamSpliceFlags, io_priority: number, cancellable: Cancellable | null, callback: AsyncReadyCallback | null): void;
 		connect(signal: "notify::closed", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::input_stream", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::output_stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::input-stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::output-stream", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -8526,16 +8526,16 @@ declare namespace imports.gi.Gio {
 		to_string(): string;
 		connect(signal: "notify::bytes", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::family", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_any", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_link_local", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_loopback", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_mc_global", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_mc_link_local", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_mc_node_local", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_mc_org_local", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_mc_site_local", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_multicast", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_site_local", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-any", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-link-local", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-loopback", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-mc-global", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-mc-link-local", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-mc-node-local", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-mc-org-local", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-mc-site-local", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-multicast", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-site-local", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -8740,7 +8740,7 @@ declare namespace imports.gi.Gio {
 		connect(signal: "notify::address", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::flowinfo", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::port", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::scope_id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::scope-id", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -9254,7 +9254,7 @@ declare namespace imports.gi.Gio {
 		 * @param n_additions the number of items to add
 		 */
 		splice(position: number, n_removals: number, additions: GObject.Object[], n_additions: number): void;
-		connect(signal: "notify::item_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::item-type", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -9423,9 +9423,9 @@ declare namespace imports.gi.Gio {
 		 */
 		steal_data(): any | null;
 		connect(signal: "notify::data", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::data_size", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::destroy_function", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::realloc_function", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::data-size", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::destroy-function", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::realloc-function", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::size", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -10721,10 +10721,10 @@ declare namespace imports.gi.Gio {
 		connect(signal: "notify::anonymous", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::choice", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::domain", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_tcrypt_hidden_volume", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::is_tcrypt_system_volume", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-tcrypt-hidden-volume", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::is-tcrypt-system-volume", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::password", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::password_save", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::password-save", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::pim", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::username", callback: (owner: this, ...args: any) => void): number;
 
@@ -11948,8 +11948,8 @@ declare namespace imports.gi.Gio {
 		 */
 		release_finish(result: AsyncResult): boolean;
 		connect(signal: "notify::allowed", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::can_acquire", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::can_release", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::can-acquire", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::can-release", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -12026,11 +12026,11 @@ declare namespace imports.gi.Gio {
 		readonly state_type: GLib.VariantType;
 
 		connect(signal: "notify::enabled", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::invert_boolean", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::invert-boolean", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::parameter_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::parameter-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::state", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::state_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::state-type", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -12184,9 +12184,9 @@ declare namespace imports.gi.Gio {
 		 * @returns the #proxy's username
 		 */
 		get_username(): string | null;
-		connect(signal: "notify::destination_hostname", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::destination_port", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::destination_protocol", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::destination-hostname", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::destination-port", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::destination-protocol", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::password", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::protocol", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::uri", callback: (owner: this, ...args: any) => void): number;
@@ -12256,8 +12256,8 @@ declare namespace imports.gi.Gio {
 		uri: string;
 
 		connect(signal: "notify::connectable", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::default_port", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::proxy_resolver", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::default-port", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::proxy-resolver", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::uri", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -13346,12 +13346,12 @@ declare namespace imports.gi.Gio {
 		connect(signal: "writable-changed", callback: (owner: this, key: string) => void): number;
 
 		connect(signal: "notify::backend", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::delay_apply", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::has_unapplied", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::delay-apply", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::has-unapplied", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::path", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::schema", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::schema_id", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::settings_schema", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::schema-id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::settings-schema", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -14117,9 +14117,9 @@ declare namespace imports.gi.Gio {
 
 		connect(signal: "notify::enabled", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::parameter_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::parameter-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::state", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::state_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::state-type", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -14705,8 +14705,8 @@ declare namespace imports.gi.Gio {
 		input_stream: InputStream;
 		output_stream: OutputStream;
 
-		connect(signal: "notify::input_stream", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::output_stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::input-stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::output-stream", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -14865,8 +14865,8 @@ declare namespace imports.gi.Gio {
 		 * @param proxy the proxy to use for #uri_scheme
 		 */
 		set_uri_proxy(uri_scheme: string, proxy: string): void;
-		connect(signal: "notify::default_proxy", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::ignore_hosts", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::default-proxy", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::ignore-hosts", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -15937,12 +15937,12 @@ declare namespace imports.gi.Gio {
 		connect(signal: "notify::family", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::fd", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::keepalive", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::listen_backlog", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::local_address", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::multicast_loopback", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::multicast_ttl", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::listen-backlog", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::local-address", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::multicast-loopback", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::multicast-ttl", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::protocol", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::remote_address", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::remote-address", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::timeout", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::ttl", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::type", callback: (owner: this, ...args: any) => void): number;
@@ -16667,14 +16667,14 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "event", callback: (owner: this, event: SocketClientEvent, connectable: SocketConnectable, connection: IOStream | null) => void): number;
 
-		connect(signal: "notify::enable_proxy", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::enable-proxy", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::family", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::local_address", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::local-address", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::protocol", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::proxy_resolver", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::proxy-resolver", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::timeout", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::tls", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::tls_validation_flags", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::tls-validation-flags", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::type", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -17126,7 +17126,7 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "event", callback: (owner: this, event: SocketListenerEvent, socket: Socket) => void): number;
 
-		connect(signal: "notify::listen_backlog", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::listen-backlog", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -18947,7 +18947,7 @@ declare namespace imports.gi.Gio {
 		 * @param graceful_disconnect Whether to do graceful disconnects or not
 		 */
 		set_graceful_disconnect(graceful_disconnect: boolean): void;
-		connect(signal: "notify::graceful_disconnect", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::graceful-disconnect", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -18982,7 +18982,7 @@ declare namespace imports.gi.Gio {
 		 * @returns #conn's base #GIOStream
 		 */
 		get_base_io_stream(): IOStream;
-		connect(signal: "notify::base_io_stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::base-io-stream", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -19229,7 +19229,7 @@ declare namespace imports.gi.Gio {
 		 */
 		prepend_name(iconname: string): void;
 		connect(signal: "notify::names", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::use_default_fallbacks", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::use-default-fallbacks", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -19316,7 +19316,7 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "run", callback: (owner: this, connection: SocketConnection, source_object: GObject.Object | null) => boolean): number;
 
-		connect(signal: "notify::max_threads", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::max-threads", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -19563,18 +19563,18 @@ declare namespace imports.gi.Gio {
 		 */
 		verify(identity: SocketConnectable | null, trusted_ca: TlsCertificate | null): TlsCertificateFlags;
 		connect(signal: "notify::certificate", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::certificate_pem", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::dns_names", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::ip_addresses", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::certificate-pem", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::dns-names", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::ip-addresses", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::issuer", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::issuer_name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::not_valid_after", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::not_valid_before", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::pkcs11_uri", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::private_key", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::private_key_pem", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::private_key_pkcs11_uri", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::subject_name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::issuer-name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::not-valid-after", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::not-valid-before", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::pkcs11-uri", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::private-key", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::private-key-pem", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::private-key-pkcs11-uri", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::subject-name", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -20143,19 +20143,19 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "accept-certificate", callback: (owner: this, peer_cert: TlsCertificate, errors: TlsCertificateFlags) => boolean): number;
 
-		connect(signal: "notify::advertised_protocols", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::base_io_stream", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::advertised-protocols", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::base-io-stream", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::certificate", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::ciphersuite_name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::ciphersuite-name", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::database", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::interaction", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::negotiated_protocol", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::peer_certificate", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::peer_certificate_errors", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::protocol_version", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::rehandshake_mode", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::require_close_notify", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::use_system_certdb", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::negotiated-protocol", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::peer-certificate", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::peer-certificate-errors", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::protocol-version", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::rehandshake-mode", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::require-close-notify", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::use-system-certdb", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -21168,7 +21168,7 @@ declare namespace imports.gi.Gio {
 		 *     array, or %NULL
 		 */
 		steal_fds(): [ number[], number | null ];
-		connect(signal: "notify::fd_list", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::fd-list", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -21245,7 +21245,7 @@ declare namespace imports.gi.Gio {
 		 * @param close_fd %TRUE to close the file descriptor when done
 		 */
 		set_close_fd(close_fd: boolean): void;
-		connect(signal: "notify::close_fd", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::close-fd", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::fd", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -21399,7 +21399,7 @@ declare namespace imports.gi.Gio {
 		 * @param close_fd %TRUE to close the file descriptor when done
 		 */
 		set_close_fd(close_fd: boolean): void;
-		connect(signal: "notify::close_fd", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::close-fd", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::fd", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -21490,9 +21490,9 @@ declare namespace imports.gi.Gio {
 		 */
 		get_path_len(): number;
 		connect(signal: "notify::abstract", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::address_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::address-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::path", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::path_as_array", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::path-as-array", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -21985,7 +21985,7 @@ declare namespace imports.gi.Gio {
 		 * @param file_info a #GFileInfo
 		 */
 		set_file_info(file_info: FileInfo | null): void;
-		connect(signal: "notify::file_info", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::file-info", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::format", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::level", callback: (owner: this, ...args: any) => void): number;
 
@@ -22042,7 +22042,7 @@ declare namespace imports.gi.Gio {
 		 * @returns a #GFileInfo, or %NULL
 		 */
 		get_file_info(): FileInfo | null;
-		connect(signal: "notify::file_info", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::file-info", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::format", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -24840,9 +24840,9 @@ declare namespace imports.gi.Gio {
 		get_state_type(): GLib.VariantType | null;
 		connect(signal: "notify::enabled", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::parameter_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::parameter-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::state", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::state_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::state-type", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -27242,9 +27242,9 @@ declare namespace imports.gi.Gio {
 		 * @param flags the #GTlsCertificateFlags to use
 		 */
 		set_validation_flags(flags: TlsCertificateFlags): void;
-		connect(signal: "notify::accepted_cas", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::server_identity", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::validation_flags", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::accepted-cas", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::server-identity", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::validation-flags", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -27746,18 +27746,18 @@ declare namespace imports.gi.Gio {
 		 */
 		connect(signal: "accept-certificate", callback: (owner: this, peer_cert: TlsCertificate, errors: TlsCertificateFlags) => boolean): number;
 
-		connect(signal: "notify::advertised_protocols", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::base_socket", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::advertised-protocols", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::base-socket", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::certificate", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::ciphersuite_name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::ciphersuite-name", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::database", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::interaction", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::negotiated_protocol", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::peer_certificate", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::peer_certificate_errors", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::protocol_version", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::rehandshake_mode", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::require_close_notify", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::negotiated-protocol", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::peer-certificate", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::peer-certificate-errors", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::protocol-version", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::rehandshake-mode", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::require-close-notify", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -27822,7 +27822,7 @@ declare namespace imports.gi.Gio {
 		 */
 		authentication_mode: TlsAuthenticationMode;
 
-		connect(signal: "notify::authentication_mode", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::authentication-mode", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -31234,8 +31234,8 @@ declare namespace imports.gi.Gio {
 		connect(signal: "network-changed", callback: (owner: this, network_available: boolean) => void): number;
 
 		connect(signal: "notify::connectivity", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::network_available", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::network_metered", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::network-available", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::network-metered", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -31498,7 +31498,7 @@ declare namespace imports.gi.Gio {
 		 * @returns Whether the system is in “Power Saver” mode.
 		 */
 		get_power_saver_enabled(): boolean;
-		connect(signal: "notify::power_saver_enabled", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::power-saver-enabled", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -32228,10 +32228,10 @@ declare namespace imports.gi.Gio {
 		 * @param flags the #GTlsCertificateFlags to use
 		 */
 		set_validation_flags(flags: TlsCertificateFlags): void;
-		connect(signal: "notify::accepted_cas", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::server_identity", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::use_ssl3", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::validation_flags", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::accepted-cas", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::server-identity", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::use-ssl3", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::validation-flags", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -32334,7 +32334,7 @@ declare namespace imports.gi.Gio {
 		 */
 		authentication_mode: TlsAuthenticationMode;
 
-		connect(signal: "notify::authentication_mode", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::authentication-mode", callback: (owner: this, ...args: any) => void): number;
 
 	}
 

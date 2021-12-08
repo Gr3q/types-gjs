@@ -179,7 +179,7 @@ declare namespace imports.gi.Gdk {
 		 * if no references remain.
 		 */
 		unref(): void;
-		connect(signal: "notify::cursor_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::cursor-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::display", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -768,21 +768,21 @@ declare namespace imports.gi.Gdk {
 		 */
 		connect(signal: "tool-changed", callback: (owner: this, tool: DeviceTool) => void): number;
 
-		connect(signal: "notify::associated_device", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::associated-device", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::axes", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::device_manager", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::device-manager", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::display", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::has_cursor", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::input_mode", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::input_source", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::n_axes", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::has-cursor", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::input-mode", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::input-source", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::n-axes", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::name", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::num_touches", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::product_id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::num-touches", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::product-id", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::seat", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::tool", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::type", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::vendor_id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::vendor-id", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -1105,9 +1105,9 @@ declare namespace imports.gi.Gdk {
 		 */
 		get_tool_type(): DeviceToolType;
 		connect(signal: "notify::axes", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::hardware_id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::hardware-id", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::serial", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::tool_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::tool-type", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -1694,7 +1694,7 @@ declare namespace imports.gi.Gdk {
 		 */
 		connect(signal: "display-opened", callback: (owner: this, display: Display) => void): number;
 
-		connect(signal: "notify::default_display", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::default-display", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -2385,7 +2385,7 @@ declare namespace imports.gi.Gdk {
 		 */
 		set_use_es(use_es: number): void;
 		connect(signal: "notify::display", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::shared_context", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::shared-context", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::window", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -2838,13 +2838,13 @@ declare namespace imports.gi.Gdk {
 
 		connect(signal: "notify::display", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::geometry", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::height_mm", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::height-mm", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::manufacturer", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::model", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::refresh_rate", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::scale_factor", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::subpixel_layout", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::width_mm", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::refresh-rate", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::scale-factor", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::subpixel-layout", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::width-mm", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::workarea", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -3267,7 +3267,7 @@ declare namespace imports.gi.Gdk {
 		 */
 		connect(signal: "size-changed", callback: (owner: this) => void): number;
 
-		connect(signal: "notify::font_options", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::font-options", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::resolution", callback: (owner: this, ...args: any) => void): number;
 
 	}

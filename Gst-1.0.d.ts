@@ -464,8 +464,8 @@ declare namespace imports.gi.Gst {
 		 */
 		connect(signal: "element-removed", callback: (owner: this, element: Element) => void): number;
 
-		connect(signal: "notify::async_handling", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::message_forward", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::async-handling", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::message-forward", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::element", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::numchildren", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::children", callback: (owner: this, ...args: any) => void): number;
@@ -1651,8 +1651,8 @@ declare namespace imports.gi.Gst {
 		connect(signal: "synced", callback: (owner: this, synced: boolean) => void): number;
 
 		connect(signal: "notify::timeout", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::window_size", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::window_threshold", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::window-size", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::window-threshold", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::object", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -2108,8 +2108,8 @@ declare namespace imports.gi.Gst {
 		connect(signal: "removed", callback: (owner: this) => void): number;
 
 		connect(signal: "notify::caps", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::device_class", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::display_name", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::device-class", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::display-name", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::properties", callback: (owner: this, ...args: any) => void): number;
 
 	}
@@ -2216,7 +2216,7 @@ declare namespace imports.gi.Gst {
 		 * Stops monitoring the devices.
 		 */
 		stop(): void;
-		connect(signal: "notify::show_all", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::show-all", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -5764,7 +5764,7 @@ declare namespace imports.gi.Gst {
 		connect(signal: "notify::caps", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::direction", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::gtype", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::name_template", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::name-template", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::presence", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::object", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::name_template", callback: (owner: this, ...args: any) => void): number;
@@ -6103,7 +6103,7 @@ declare namespace imports.gi.Gst {
 		 * @param clock the clock to use
 		 */
 		use_clock(clock: Clock | null): void;
-		connect(signal: "notify::auto_flush_bus", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::auto-flush-bus", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::delay", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::latency", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::bin", callback: (owner: this, ...args: any) => void): number;
@@ -6981,9 +6981,9 @@ declare namespace imports.gi.Gst {
 		 */
 		set_tags(tags: TagList | null): void;
 		connect(signal: "notify::caps", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::stream_flags", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::stream_id", callback: (owner: this, ...args: any) => void): number;
-		connect(signal: "notify::stream_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::stream-flags", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::stream-id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::stream-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::tags", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::stream_id", callback: (owner: this, ...args: any) => void): number;
 
@@ -7067,7 +7067,7 @@ declare namespace imports.gi.Gst {
 		get_upstream_id(): string | null;
 		connect(signal: "stream-notify", callback: (owner: this, object: Stream, p0: GObject.ParamSpec) => void): number;
 
-		connect(signal: "notify::upstream_id", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::upstream-id", callback: (owner: this, ...args: any) => void): number;
 
 	}
 
@@ -7119,7 +7119,7 @@ declare namespace imports.gi.Gst {
 		clock_type: ClockType;
 		readonly clock: Clock;
 
-		connect(signal: "notify::clock_type", callback: (owner: this, ...args: any) => void): number;
+		connect(signal: "notify::clock-type", callback: (owner: this, ...args: any) => void): number;
 		connect(signal: "notify::clock", callback: (owner: this, ...args: any) => void): number;
 
 	}

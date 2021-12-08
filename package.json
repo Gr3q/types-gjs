@@ -1,6 +1,6 @@
 {
   "name": "@ci-types/gjs",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Typescript definitions for GJS - Gnome JavaScript",
   "types": "index.d.ts",
   "scripts": {
