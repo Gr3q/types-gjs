@@ -15,3 +15,5 @@ It can be included in the project by creatding a declaration file, for example `
 ```ts
 import "@ci-types/gjs";
 ```
+
+In the `tsconfig.json` file the option [exactOptionalPropertyTypes](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4/#exact-optional-property-types) should be set to true as for the construction of a GObject all properties are optional but are not allowed to be undefined. 
