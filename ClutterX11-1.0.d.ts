@@ -112,17 +112,9 @@ declare namespace imports.gi.ClutterX11 {
 	type TexturePixmapInitOptionsMixin = Clutter.TextureInitOptions & Atk.ImplementorIfaceInitOptions & Clutter.AnimatableInitOptions & Clutter.ContainerInitOptions & Clutter.ScriptableInitOptions & 
 	Pick<ITexturePixmap,
 		"automatic_updates" |
-		"destroyed" |
 		"pixmap" |
-		"pixmap_depth" |
-		"pixmap_height" |
-		"pixmap_width" |
 		"window" |
-		"window_mapped" |
-		"window_override_redirect" |
-		"window_redirect_automatic" |
-		"window_x" |
-		"window_y">;
+		"window_redirect_automatic">;
 
 	export interface TexturePixmapInitOptions extends TexturePixmapInitOptionsMixin {}
 

@@ -131,13 +131,7 @@ declare namespace imports.gi.Atk {
 
 	}
 
-	type HyperlinkInitOptionsMixin = GObject.ObjectInitOptions & ActionInitOptions & 
-	Pick<IHyperlink,
-		"end_index" |
-		"number_of_anchors" |
-		"selected_link" |
-		"start_index">;
-
+	type HyperlinkInitOptionsMixin = GObject.ObjectInitOptions & ActionInitOptions
 	export interface HyperlinkInitOptions extends HyperlinkInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -669,10 +663,7 @@ declare namespace imports.gi.Atk {
 
 	type ObjectInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IObject,
-		"accessible_component_layer" |
-		"accessible_component_mdi_zorder" |
 		"accessible_description" |
-		"accessible_hypertext_nlinks" |
 		"accessible_name" |
 		"accessible_parent" |
 		"accessible_role" |
@@ -683,13 +674,7 @@ declare namespace imports.gi.Atk {
 		"accessible_table_row_description" |
 		"accessible_table_row_header" |
 		"accessible_table_summary" |
-		"accessible_value" |
-		"description" |
-		"name" |
-		"accessible_parent" |
-		"role" |
-		"relation_set" |
-		"layer">;
+		"accessible_value">;
 
 	export interface ObjectInitOptions extends ObjectInitOptionsMixin {}
 
@@ -865,11 +850,7 @@ declare namespace imports.gi.Atk {
 
 	}
 
-	type RegistryInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IRegistry,
-		"factory_type_registry" |
-		"factory_singleton_cache">;
-
+	type RegistryInitOptionsMixin = GObject.ObjectInitOptions
 	export interface RegistryInitOptions extends RegistryInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -931,9 +912,7 @@ declare namespace imports.gi.Atk {
 	type RelationInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IRelation,
 		"relation_type" |
-		"target" |
-		"target" |
-		"relationship">;
+		"target">;
 
 	export interface RelationInitOptions extends RelationInitOptionsMixin {}
 
@@ -1036,10 +1015,7 @@ declare namespace imports.gi.Atk {
 
 	}
 
-	type RelationSetInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IRelationSet,
-		"relations">;
-
+	type RelationSetInitOptionsMixin = GObject.ObjectInitOptions
 	export interface RelationSetInitOptions extends RelationSetInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,

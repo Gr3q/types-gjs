@@ -4213,33 +4213,24 @@ declare namespace imports.gi.Clutter {
 
 	type ActorInitOptionsMixin = GObject.InitiallyUnownedInitOptions & Atk.ImplementorIfaceInitOptions & AnimatableInitOptions & ContainerInitOptions & ScriptableInitOptions & 
 	Pick<IActor,
-		"allocation" |
 		"anchor_gravity" |
 		"anchor_x" |
 		"anchor_y" |
 		"background_color" |
-		"background_color_set" |
 		"child_transform" |
-		"child_transform_set" |
 		"clip" |
 		"clip_rect" |
 		"clip_to_allocation" |
 		"content" |
-		"content_box" |
 		"content_gravity" |
 		"content_repeat" |
 		"depth" |
-		"first_child" |
 		"fixed_position_set" |
 		"fixed_x" |
 		"fixed_y" |
-		"has_clip" |
-		"has_pointer" |
 		"height" |
-		"last_child" |
 		"layout_manager" |
 		"magnification_filter" |
-		"mapped" |
 		"margin_bottom" |
 		"margin_left" |
 		"margin_right" |
@@ -4260,7 +4251,6 @@ declare namespace imports.gi.Clutter {
 		"pivot_point_z" |
 		"position" |
 		"reactive" |
-		"realized" |
 		"request_mode" |
 		"rotation_angle_x" |
 		"rotation_angle_y" |
@@ -4279,7 +4269,6 @@ declare namespace imports.gi.Clutter {
 		"size" |
 		"text_direction" |
 		"transform" |
-		"transform_set" |
 		"translation_x" |
 		"translation_y" |
 		"translation_z" |
@@ -4291,8 +4280,7 @@ declare namespace imports.gi.Clutter {
 		"y" |
 		"y_align" |
 		"y_expand" |
-		"z_position" |
-		"flags">;
+		"z_position">;
 
 	export interface ActorInitOptions extends ActorInitOptionsMixin {}
 
@@ -4372,7 +4360,6 @@ declare namespace imports.gi.Clutter {
 
 	type ActorMetaInitOptionsMixin = GObject.InitiallyUnownedInitOptions & 
 	Pick<IActorMeta,
-		"actor" |
 		"enabled" |
 		"name">;
 
@@ -4603,7 +4590,6 @@ declare namespace imports.gi.Clutter {
 
 	type AlphaInitOptionsMixin = GObject.InitiallyUnownedInitOptions & ScriptableInitOptions & 
 	Pick<IAlpha,
-		"alpha" |
 		"mode" |
 		"timeline">;
 
@@ -7586,7 +7572,6 @@ declare namespace imports.gi.Clutter {
 	Pick<ICanvas,
 		"height" |
 		"scale_factor" |
-		"scale_factor_set" |
 		"width">;
 
 	export interface CanvasInitOptions extends CanvasInitOptionsMixin {}
@@ -7658,9 +7643,7 @@ declare namespace imports.gi.Clutter {
 	type ChildMetaInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IChildMeta,
 		"actor" |
-		"container" |
-		"container" |
-		"actor">;
+		"container">;
 
 	export interface ChildMetaInitOptions extends ChildMetaInitOptionsMixin {}
 
@@ -7814,10 +7797,8 @@ declare namespace imports.gi.Clutter {
 
 	type ClickActionInitOptionsMixin = ActionInitOptions & 
 	Pick<IClickAction,
-		"held" |
 		"long_press_duration" |
-		"long_press_threshold" |
-		"pressed">;
+		"long_press_threshold">;
 
 	export interface ClickActionInitOptions extends ClickActionInitOptionsMixin {}
 
@@ -8519,7 +8500,6 @@ declare namespace imports.gi.Clutter {
 	type DragActionInitOptionsMixin = ActionInitOptions & 
 	Pick<IDragAction,
 		"drag_area" |
-		"drag_area_set" |
 		"drag_axis" |
 		"drag_handle" |
 		"x_drag_threshold" |
@@ -9905,7 +9885,6 @@ declare namespace imports.gi.Clutter {
 		"enabled" |
 		"has_cursor" |
 		"id" |
-		"n_axes" |
 		"name" |
 		"product_id" |
 		"vendor_id">;
@@ -10525,7 +10504,6 @@ declare namespace imports.gi.Clutter {
 
 	type LayoutMetaInitOptionsMixin = ChildMetaInitOptions & 
 	Pick<ILayoutMeta,
-		"manager" |
 		"manager">;
 
 	export interface LayoutMetaInitOptions extends LayoutMetaInitOptionsMixin {}
@@ -10975,10 +10953,7 @@ declare namespace imports.gi.Clutter {
 
 	}
 
-	type ModelInitOptionsMixin = GObject.ObjectInitOptions & ScriptableInitOptions & 
-	Pick<IModel,
-		"filter_set">;
-
+	type ModelInitOptionsMixin = GObject.ObjectInitOptions & ScriptableInitOptions
 	export interface ModelInitOptions extends ModelInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -11641,10 +11616,7 @@ declare namespace imports.gi.Clutter {
 
 	}
 
-	type ParamSpecColorInitOptionsMixin = GObject.ParamSpecInitOptions & 
-	Pick<IParamSpecColor,
-		"default_value">;
-
+	type ParamSpecColorInitOptionsMixin = GObject.ParamSpecInitOptions
 	export interface ParamSpecColorInitOptions extends ParamSpecColorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -11685,12 +11657,7 @@ declare namespace imports.gi.Clutter {
 
 	}
 
-	type ParamSpecFixedInitOptionsMixin = GObject.ParamSpecInitOptions & 
-	Pick<IParamSpecFixed,
-		"minimum" |
-		"maximum" |
-		"default_value">;
-
+	type ParamSpecFixedInitOptionsMixin = GObject.ParamSpecInitOptions
 	export interface ParamSpecFixedInitOptions extends ParamSpecFixedInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -11922,8 +11889,7 @@ declare namespace imports.gi.Clutter {
 
 	type PathInitOptionsMixin = GObject.InitiallyUnownedInitOptions & 
 	Pick<IPath,
-		"description" |
-		"length">;
+		"description">;
 
 	export interface PathInitOptions extends PathInitOptionsMixin {}
 
@@ -12679,8 +12645,6 @@ declare namespace imports.gi.Clutter {
 
 	type ScriptInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IScript,
-		"filename" |
-		"filename_set" |
 		"translation_domain">;
 
 	export interface ScriptInitOptions extends ScriptInitOptionsMixin {}
@@ -13072,7 +13036,6 @@ declare namespace imports.gi.Clutter {
 
 	type ShaderInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IShader,
-		"compiled" |
 		"enabled" |
 		"fragment_source" |
 		"vertex_source">;
@@ -13977,7 +13940,6 @@ declare namespace imports.gi.Clutter {
 		"color" |
 		"cursor_visible" |
 		"fog" |
-		"fullscreen_set" |
 		"key_focus" |
 		"no_clear_hint" |
 		"offscreen" |
@@ -14110,10 +14072,7 @@ declare namespace imports.gi.Clutter {
 
 	}
 
-	type StageManagerInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IStageManager,
-		"default_stage">;
-
+	type StageManagerInitOptionsMixin = GObject.ObjectInitOptions
 	export interface StageManagerInitOptions extends StageManagerInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -15730,7 +15689,6 @@ declare namespace imports.gi.Clutter {
 		"buffer" |
 		"color" |
 		"cursor_color" |
-		"cursor_color_set" |
 		"cursor_position" |
 		"cursor_size" |
 		"cursor_visible" |
@@ -15747,10 +15705,8 @@ declare namespace imports.gi.Clutter {
 		"position" |
 		"selectable" |
 		"selected_text_color" |
-		"selected_text_color_set" |
 		"selection_bound" |
 		"selection_color" |
-		"selection_color_set" |
 		"single_line_mode" |
 		"text" |
 		"use_markup">;
@@ -15952,9 +15908,7 @@ declare namespace imports.gi.Clutter {
 
 	type TextBufferInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<ITextBuffer,
-		"length" |
-		"max_length" |
-		"text">;
+		"max_length">;
 
 	export interface TextBufferInitOptions extends TextBufferInitOptionsMixin {}
 
@@ -16452,11 +16406,9 @@ declare namespace imports.gi.Clutter {
 		"filter_quality" |
 		"keep_aspect_ratio" |
 		"pick_with_alpha" |
-		"pixel_format" |
 		"repeat_x" |
 		"repeat_y" |
-		"sync_size" |
-		"tile_waste">;
+		"sync_size">;
 
 	export interface TextureInitOptions extends TextureInitOptionsMixin {}
 
@@ -20252,9 +20204,6 @@ declare namespace imports.gi.Clutter {
 
 	type MediaInitOptionsMixin = Pick<IMedia,
 		"audio_volume" |
-		"buffer_fill" |
-		"can_seek" |
-		"duration" |
 		"playing" |
 		"progress" |
 		"subtitle_font_name" |

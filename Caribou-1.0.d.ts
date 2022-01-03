@@ -172,9 +172,7 @@ declare namespace imports.gi.Caribou {
 
 	type GroupModelInitOptionsMixin = GObject.ObjectInitOptions & Caribou.IKeyboardObjectInitOptions & 
 	Pick<IGroupModel,
-		"active_level" |
-		"group" |
-		"variant">;
+		"active_level">;
 
 	export interface GroupModelInitOptions extends GroupModelInitOptionsMixin {}
 
@@ -307,8 +305,7 @@ declare namespace imports.gi.Caribou {
 		"name" |
 		"keyval" |
 		"text" |
-		"label" |
-		"modifier_state">;
+		"label">;
 
 	export interface KeyModelInitOptions extends KeyModelInitOptionsMixin {}
 

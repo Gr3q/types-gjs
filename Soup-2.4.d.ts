@@ -169,7 +169,6 @@ declare namespace imports.gi.Soup {
 	Pick<IAddress,
 		"family" |
 		"name" |
-		"physical" |
 		"port" |
 		"protocol" |
 		"sockaddr">;
@@ -334,10 +333,7 @@ declare namespace imports.gi.Soup {
 	type AuthInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IAuth,
 		"host" |
-		"is_authenticated" |
 		"is_for_proxy" |
-		"realm" |
-		"scheme_name" |
 		"realm">;
 
 	export interface AuthInitOptions extends AuthInitOptionsMixin {}
@@ -2124,25 +2120,12 @@ declare namespace imports.gi.Soup {
 		"method" |
 		"priority" |
 		"reason_phrase" |
-		"request_body" |
-		"request_body_data" |
-		"request_headers" |
-		"response_body" |
-		"response_body_data" |
-		"response_headers" |
 		"server_side" |
 		"site_for_cookies" |
 		"status_code" |
 		"tls_certificate" |
 		"tls_errors" |
-		"uri" |
-		"method" |
-		"status_code" |
-		"reason_phrase" |
-		"request_body" |
-		"request_headers" |
-		"response_body" |
-		"response_headers">;
+		"uri">;
 
 	export interface MessageInitOptions extends MessageInitOptionsMixin {}
 
@@ -4468,7 +4451,6 @@ declare namespace imports.gi.Soup {
 		"async_context" |
 		"fd" |
 		"ipv6_only" |
-		"is_server" |
 		"local_address" |
 		"non_blocking" |
 		"remote_address" |
@@ -4476,9 +4458,6 @@ declare namespace imports.gi.Soup {
 		"ssl_fallback" |
 		"ssl_strict" |
 		"timeout" |
-		"tls_certificate" |
-		"tls_errors" |
-		"trusted_certificate" |
 		"use_thread_context">;
 
 	export interface SocketInitOptions extends SocketInitOptionsMixin {}
@@ -4760,7 +4739,6 @@ declare namespace imports.gi.Soup {
 		"max_incoming_payload_size" |
 		"origin" |
 		"protocol" |
-		"state" |
 		"uri">;
 
 	export interface WebsocketConnectionInitOptions extends WebsocketConnectionInitOptionsMixin {}

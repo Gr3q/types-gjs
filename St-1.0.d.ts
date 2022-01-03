@@ -146,36 +146,7 @@ declare namespace imports.gi.St {
 
 	type BackgroundEffectInitOptionsMixin = Clutter.OffscreenEffectInitOptions & 
 	Pick<IBackgroundEffect,
-		"bumpmap" |
-		"actor" |
-		"bg_texture" |
-		"bg_sub_texture" |
-		"bg_bumpmap" |
-		"bumpmap_location" |
-		"pixel_step_uniform0" |
-		"pixel_step_uniform1" |
-		"pixel_step_uniform2" |
-		"BumpTex_uniform" |
-		"bump_step_uniform" |
-		"bg_posx_i" |
-		"bg_posy_i" |
-		"bg_width_i" |
-		"bg_height_i" |
-		"fg_width_i" |
-		"fg_height_i" |
-		"bumptex_width_i" |
-		"bumptex_height_i" |
-		"posx_old" |
-		"posy_old" |
-		"width_old" |
-		"height_old" |
-		"pipeline0" |
-		"pipeline1" |
-		"pipeline2" |
-		"pipeline3" |
-		"pipeline4" |
-		"old_time" |
-		"opacity">;
+		"bumpmap">;
 
 	export interface BackgroundEffectInitOptions extends BackgroundEffectInitOptionsMixin {}
 
@@ -528,7 +499,6 @@ declare namespace imports.gi.St {
 		"button_mask" |
 		"checked" |
 		"label" |
-		"pressed" |
 		"toggle_mode">;
 
 	export interface ButtonInitOptions extends ButtonInitOptionsMixin {}
@@ -730,7 +700,6 @@ declare namespace imports.gi.St {
 
 	type EntryInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & Clutter.AnimatableInitOptions & Clutter.ContainerInitOptions & Clutter.ScriptableInitOptions & 
 	Pick<IEntry,
-		"clutter_text" |
 		"hint_text" |
 		"text">;
 
@@ -968,7 +937,6 @@ declare namespace imports.gi.St {
 
 	type LabelInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & Clutter.AnimatableInitOptions & Clutter.ContainerInitOptions & Clutter.ScriptableInitOptions & 
 	Pick<ILabel,
-		"clutter_text" |
 		"text">;
 
 	export interface LabelInitOptions extends LabelInitOptionsMixin {}
@@ -1149,12 +1117,8 @@ declare namespace imports.gi.St {
 	Pick<IScrollView,
 		"enable_auto_scrolling" |
 		"enable_mouse_scrolling" |
-		"hscroll" |
 		"hscrollbar_policy" |
-		"hscrollbar_visible" |
-		"vscroll" |
-		"vscrollbar_policy" |
-		"vscrollbar_visible">;
+		"vscrollbar_policy">;
 
 	export interface ScrollViewInitOptions extends ScrollViewInitOptionsMixin {}
 
@@ -1212,10 +1176,7 @@ declare namespace imports.gi.St {
 
 	}
 
-	type SettingsInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<ISettings,
-		"font_name">;
-
+	type SettingsInitOptionsMixin = GObject.ObjectInitOptions
 	export interface SettingsInitOptions extends SettingsInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -1375,9 +1336,7 @@ declare namespace imports.gi.St {
 
 	type TableInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & Clutter.AnimatableInitOptions & Clutter.ContainerInitOptions & Clutter.ScriptableInitOptions & 
 	Pick<ITable,
-		"column_count" |
-		"homogeneous" |
-		"row_count">;
+		"homogeneous">;
 
 	export interface TableInitOptions extends TableInitOptionsMixin {}
 

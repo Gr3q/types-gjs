@@ -922,9 +922,6 @@ declare namespace imports.gi.Gio {
 		"application_id" |
 		"flags" |
 		"inactivity_timeout" |
-		"is_busy" |
-		"is_registered" |
-		"is_remote" |
 		"resource_base_path">;
 
 	export interface ApplicationInitOptions extends ApplicationInitOptionsMixin {}
@@ -1311,10 +1308,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type ApplicationCommandLineInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IApplicationCommandLine,
-		"is_remote">;
-
+	type ApplicationCommandLineInitOptionsMixin = GObject.ObjectInitOptions
 	export interface ApplicationCommandLineInitOptions extends ApplicationCommandLineInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -3460,13 +3454,10 @@ declare namespace imports.gi.Gio {
 
 	type DBusConnectionInitOptionsMixin = GObject.ObjectInitOptions & AsyncInitableInitOptions & InitableInitOptions & 
 	Pick<IDBusConnection,
-		"capabilities" |
-		"closed" |
 		"exit_on_close" |
 		"flags" |
 		"guid" |
-		"stream" |
-		"unique_name">;
+		"stream">;
 
 	export interface DBusConnectionInitOptions extends DBusConnectionInitOptionsMixin {}
 
@@ -4199,10 +4190,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type DBusMessageInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IDBusMessage,
-		"locked">;
-
+	type DBusMessageInitOptionsMixin = GObject.ObjectInitOptions
 	export interface DBusMessageInitOptions extends DBusMessageInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -4633,7 +4621,6 @@ declare namespace imports.gi.Gio {
 		"get_proxy_type_func" |
 		"get_proxy_type_user_data" |
 		"name" |
-		"name_owner" |
 		"object_path">;
 
 	export interface DBusObjectManagerClientInitOptions extends DBusObjectManagerClientInitOptionsMixin {}
@@ -5497,7 +5484,6 @@ declare namespace imports.gi.Gio {
 		"g_interface_info" |
 		"g_interface_name" |
 		"g_name" |
-		"g_name_owner" |
 		"g_object_path">;
 
 	export interface DBusProxyInitOptions extends DBusProxyInitOptionsMixin {}
@@ -5782,10 +5768,8 @@ declare namespace imports.gi.Gio {
 
 	type DBusServerInitOptionsMixin = GObject.ObjectInitOptions & InitableInitOptions & 
 	Pick<IDBusServer,
-		"active" |
 		"address" |
 		"authentication_observer" |
-		"client_address" |
 		"flags" |
 		"guid">;
 
@@ -7799,7 +7783,6 @@ declare namespace imports.gi.Gio {
 
 	type FileMonitorInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IFileMonitor,
-		"cancelled" |
 		"rate_limit">;
 
 	export interface FileMonitorInitOptions extends FileMonitorInitOptionsMixin {}
@@ -8010,8 +7993,7 @@ declare namespace imports.gi.Gio {
 	type FilterInputStreamInitOptionsMixin = InputStreamInitOptions & 
 	Pick<IFilterInputStream,
 		"base_stream" |
-		"close_base_stream" |
-		"base_stream">;
+		"close_base_stream">;
 
 	export interface FilterInputStreamInitOptions extends FilterInputStreamInitOptionsMixin {}
 
@@ -8064,8 +8046,7 @@ declare namespace imports.gi.Gio {
 	type FilterOutputStreamInitOptionsMixin = OutputStreamInitOptions & 
 	Pick<IFilterOutputStream,
 		"base_stream" |
-		"close_base_stream" |
-		"base_stream">;
+		"close_base_stream">;
 
 	export interface FilterOutputStreamInitOptions extends FilterOutputStreamInitOptionsMixin {}
 
@@ -8310,12 +8291,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type IOStreamInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IIOStream,
-		"closed" |
-		"input_stream" |
-		"output_stream">;
-
+	type IOStreamInitOptionsMixin = GObject.ObjectInitOptions
 	export interface IOStreamInitOptions extends IOStreamInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -8542,17 +8518,7 @@ declare namespace imports.gi.Gio {
 	type InetAddressInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IInetAddress,
 		"bytes" |
-		"family" |
-		"is_any" |
-		"is_link_local" |
-		"is_loopback" |
-		"is_mc_global" |
-		"is_mc_link_local" |
-		"is_mc_node_local" |
-		"is_mc_org_local" |
-		"is_mc_site_local" |
-		"is_multicast" |
-		"is_site_local">;
+		"family">;
 
 	export interface InetAddressInitOptions extends InetAddressInitOptionsMixin {}
 
@@ -8663,7 +8629,6 @@ declare namespace imports.gi.Gio {
 	type InetAddressMaskInitOptionsMixin = GObject.ObjectInitOptions & InitableInitOptions & 
 	Pick<IInetAddressMask,
 		"address" |
-		"family" |
 		"length">;
 
 	export interface InetAddressMaskInitOptions extends InetAddressMaskInitOptionsMixin {}
@@ -9433,7 +9398,6 @@ declare namespace imports.gi.Gio {
 	type MemoryOutputStreamInitOptionsMixin = OutputStreamInitOptions & PollableOutputStreamInitOptions & SeekableInitOptions & 
 	Pick<IMemoryOutputStream,
 		"data" |
-		"data_size" |
 		"destroy_function" |
 		"realloc_function" |
 		"size">;
@@ -11953,12 +11917,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type PermissionInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IPermission,
-		"allowed" |
-		"can_acquire" |
-		"can_release">;
-
+	type PermissionInitOptionsMixin = GObject.ObjectInitOptions
 	export interface PermissionInitOptions extends PermissionInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -12036,12 +11995,8 @@ declare namespace imports.gi.Gio {
 
 	type PropertyActionInitOptionsMixin = GObject.ObjectInitOptions & ActionInitOptions & 
 	Pick<IPropertyAction,
-		"enabled" |
 		"invert_boolean" |
-		"name" |
-		"parameter_type" |
-		"state" |
-		"state_type">;
+		"name">;
 
 	export interface PropertyActionInitOptions extends PropertyActionInitOptionsMixin {}
 
@@ -13358,8 +13313,6 @@ declare namespace imports.gi.Gio {
 	type SettingsInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<ISettings,
 		"backend" |
-		"delay_apply" |
-		"has_unapplied" |
 		"path" |
 		"schema" |
 		"schema_id" |
@@ -14128,8 +14081,7 @@ declare namespace imports.gi.Gio {
 		"enabled" |
 		"name" |
 		"parameter_type" |
-		"state" |
-		"state_type">;
+		"state">;
 
 	export interface SimpleActionInitOptions extends SimpleActionInitOptionsMixin {}
 
@@ -15957,11 +15909,9 @@ declare namespace imports.gi.Gio {
 		"fd" |
 		"keepalive" |
 		"listen_backlog" |
-		"local_address" |
 		"multicast_loopback" |
 		"multicast_ttl" |
 		"protocol" |
-		"remote_address" |
 		"timeout" |
 		"ttl" |
 		"type">;
@@ -16108,10 +16058,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type SocketAddressInitOptionsMixin = GObject.ObjectInitOptions & SocketConnectableInitOptions & 
-	Pick<ISocketAddress,
-		"family">;
-
+	type SocketAddressInitOptionsMixin = GObject.ObjectInitOptions & SocketConnectableInitOptions
 	export interface SocketAddressInitOptions extends SocketAddressInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -18336,10 +18283,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type TaskInitOptionsMixin = GObject.ObjectInitOptions & AsyncResultInitOptions & 
-	Pick<ITask,
-		"completed">;
-
+	type TaskInitOptionsMixin = GObject.ObjectInitOptions & AsyncResultInitOptions
 	export interface TaskInitOptions extends TaskInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -19582,17 +19526,11 @@ declare namespace imports.gi.Gio {
 	Pick<ITlsCertificate,
 		"certificate" |
 		"certificate_pem" |
-		"dns_names" |
-		"ip_addresses" |
 		"issuer" |
-		"issuer_name" |
-		"not_valid_after" |
-		"not_valid_before" |
 		"pkcs11_uri" |
 		"private_key" |
 		"private_key_pem" |
-		"private_key_pkcs11_uri" |
-		"subject_name">;
+		"private_key_pkcs11_uri">;
 
 	export interface TlsCertificateInitOptions extends TlsCertificateInitOptionsMixin {}
 
@@ -20164,13 +20102,8 @@ declare namespace imports.gi.Gio {
 		"advertised_protocols" |
 		"base_io_stream" |
 		"certificate" |
-		"ciphersuite_name" |
 		"database" |
 		"interaction" |
-		"negotiated_protocol" |
-		"peer_certificate" |
-		"peer_certificate_errors" |
-		"protocol_version" |
 		"rehandshake_mode" |
 		"require_close_notify" |
 		"use_system_certdb">;
@@ -22049,7 +21982,6 @@ declare namespace imports.gi.Gio {
 
 	type ZlibDecompressorInitOptionsMixin = GObject.ObjectInitOptions & ConverterInitOptions & 
 	Pick<IZlibDecompressor,
-		"file_info" |
 		"format">;
 
 	export interface ZlibDecompressorInitOptions extends ZlibDecompressorInitOptionsMixin {}
@@ -24846,13 +24778,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type ActionInitOptionsMixin = Pick<IAction,
-		"enabled" |
-		"name" |
-		"parameter_type" |
-		"state" |
-		"state_type">;
-
+	type ActionInitOptionsMixin  = {};
 	export interface ActionInitOptions extends ActionInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -27249,7 +27175,6 @@ declare namespace imports.gi.Gio {
 	}
 
 	type DtlsClientConnectionInitOptionsMixin = Pick<IDtlsClientConnection,
-		"accepted_cas" |
 		"server_identity" |
 		"validation_flags">;
 
@@ -27765,13 +27690,8 @@ declare namespace imports.gi.Gio {
 		"advertised_protocols" |
 		"base_socket" |
 		"certificate" |
-		"ciphersuite_name" |
 		"database" |
 		"interaction" |
-		"negotiated_protocol" |
-		"peer_certificate" |
-		"peer_certificate_errors" |
-		"protocol_version" |
 		"rehandshake_mode" |
 		"require_close_notify">;
 
@@ -31239,11 +31159,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type NetworkMonitorInitOptionsMixin = Pick<INetworkMonitor,
-		"connectivity" |
-		"network_available" |
-		"network_metered">;
-
+	type NetworkMonitorInitOptionsMixin  = {};
 	export interface NetworkMonitorInitOptions extends NetworkMonitorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -31502,9 +31418,7 @@ declare namespace imports.gi.Gio {
 
 	}
 
-	type PowerProfileMonitorInitOptionsMixin = Pick<IPowerProfileMonitor,
-		"power_saver_enabled">;
-
+	type PowerProfileMonitorInitOptionsMixin  = {};
 	export interface PowerProfileMonitorInitOptions extends PowerProfileMonitorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -32236,7 +32150,6 @@ declare namespace imports.gi.Gio {
 	}
 
 	type TlsClientConnectionInitOptionsMixin = Pick<ITlsClientConnection,
-		"accepted_cas" |
 		"server_identity" |
 		"use_ssl3" |
 		"validation_flags">;

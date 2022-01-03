@@ -576,11 +576,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type AccelGroupInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IAccelGroup,
-		"is_locked" |
-		"modifier_mask">;
-
+	type AccelGroupInitOptionsMixin = GObject.ObjectInitOptions
 	export interface AccelGroupInitOptions extends AccelGroupInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -695,8 +691,7 @@ declare namespace imports.gi.Gtk {
 	type AccelLabelInitOptionsMixin = LabelInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IAccelLabel,
 		"accel_closure" |
-		"accel_widget" |
-		"label">;
+		"accel_widget">;
 
 	export interface AccelLabelInitOptions extends AccelLabelInitOptionsMixin {}
 
@@ -1709,8 +1704,7 @@ declare namespace imports.gi.Gtk {
 		"visible" |
 		"visible_horizontal" |
 		"visible_overflown" |
-		"visible_vertical" |
-		"object">;
+		"visible_vertical">;
 
 	export interface ActionInitOptions extends ActionInitOptionsMixin {}
 
@@ -2595,8 +2589,7 @@ declare namespace imports.gi.Gtk {
 		"xalign" |
 		"xscale" |
 		"yalign" |
-		"yscale" |
-		"bin">;
+		"yscale">;
 
 	export interface AlignmentInitOptions extends AlignmentInitOptionsMixin {}
 
@@ -3471,11 +3464,9 @@ declare namespace imports.gi.Gtk {
 
 	type ApplicationInitOptionsMixin = Gio.ApplicationInitOptions & Gio.ActionGroupInitOptions & Gio.ActionMapInitOptions & 
 	Pick<IApplication,
-		"active_window" |
 		"app_menu" |
 		"menubar" |
-		"register_session" |
-		"screensaver_active">;
+		"register_session">;
 
 	export interface ApplicationInitOptions extends ApplicationInitOptionsMixin {}
 
@@ -3803,8 +3794,7 @@ declare namespace imports.gi.Gtk {
 	type ArrowInitOptionsMixin = MiscInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IArrow,
 		"arrow_type" |
-		"shadow_type" |
-		"misc">;
+		"shadow_type">;
 
 	export interface ArrowInitOptions extends ArrowInitOptionsMixin {}
 
@@ -3907,8 +3897,7 @@ declare namespace imports.gi.Gtk {
 		"obey_child" |
 		"ratio" |
 		"xalign" |
-		"yalign" |
-		"frame">;
+		"yalign">;
 
 	export interface AspectFrameInitOptions extends AspectFrameInitOptionsMixin {}
 
@@ -4319,10 +4308,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type BinInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<IBin,
-		"container">;
-
+	type BinInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface BinInitOptions extends BinInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -4519,8 +4505,7 @@ declare namespace imports.gi.Gtk {
 	Pick<IBox,
 		"baseline_position" |
 		"homogeneous" |
-		"spacing" |
-		"container">;
+		"spacing">;
 
 	export interface BoxInitOptions extends BoxInitOptionsMixin {}
 
@@ -5619,8 +5604,7 @@ declare namespace imports.gi.Gtk {
 
 	type ButtonBoxInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
 	Pick<IButtonBox,
-		"layout_style" |
-		"box">;
+		"layout_style">;
 
 	export interface ButtonBoxInitOptions extends ButtonBoxInitOptionsMixin {}
 
@@ -5879,8 +5863,7 @@ declare namespace imports.gi.Gtk {
 		"show_details" |
 		"show_heading" |
 		"show_week_numbers" |
-		"year" |
-		"widget">;
+		"year">;
 
 	export interface CalendarInitOptions extends CalendarInitOptionsMixin {}
 
@@ -6472,8 +6455,6 @@ declare namespace imports.gi.Gtk {
 
 	type CellAreaInitOptionsMixin = GObject.InitiallyUnownedInitOptions & BuildableInitOptions & CellLayoutInitOptions & 
 	Pick<ICellArea,
-		"edit_widget" |
-		"edited_cell" |
 		"focus_cell">;
 
 	export interface CellAreaInitOptions extends CellAreaInitOptionsMixin {}
@@ -7082,11 +7063,7 @@ declare namespace imports.gi.Gtk {
 
 	type CellAreaContextInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<ICellAreaContext,
-		"area" |
-		"minimum_height" |
-		"minimum_width" |
-		"natural_height" |
-		"natural_width">;
+		"area">;
 
 	export interface CellAreaContextInitOptions extends CellAreaContextInitOptionsMixin {}
 
@@ -7428,7 +7405,6 @@ declare namespace imports.gi.Gtk {
 		"cell_background_gdk" |
 		"cell_background_rgba" |
 		"cell_background_set" |
-		"editing" |
 		"height" |
 		"is_expanded" |
 		"is_expander" |
@@ -8619,10 +8595,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type CheckButtonInitOptionsMixin = ToggleButtonInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions & 
-	Pick<ICheckButton,
-		"toggle_button">;
-
+	type CheckButtonInitOptionsMixin = ToggleButtonInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions
 	export interface CheckButtonInitOptions extends CheckButtonInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -8759,8 +8732,7 @@ declare namespace imports.gi.Gtk {
 	Pick<ICheckMenuItem,
 		"active" |
 		"draw_as_radio" |
-		"inconsistent" |
-		"menu_item">;
+		"inconsistent">;
 
 	export interface CheckMenuItemInitOptions extends CheckMenuItemInitOptionsMixin {}
 
@@ -9450,8 +9422,7 @@ declare namespace imports.gi.Gtk {
 		"rgba" |
 		"show_editor" |
 		"title" |
-		"use_alpha" |
-		"button">;
+		"use_alpha">;
 
 	export interface ColorButtonInitOptions extends ColorButtonInitOptionsMixin {}
 
@@ -9833,13 +9804,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type ColorSelectionDialogInitOptionsMixin = DialogInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<IColorSelectionDialog,
-		"cancel_button" |
-		"color_selection" |
-		"help_button" |
-		"ok_button">;
-
+	type ColorSelectionDialogInitOptionsMixin = DialogInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface ColorSelectionDialogInitOptions extends ColorSelectionDialogInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -10351,7 +10316,6 @@ declare namespace imports.gi.Gtk {
 		"id_column" |
 		"model" |
 		"popup_fixed_width" |
-		"popup_shown" |
 		"row_span_column" |
 		"tearoff_title" |
 		"wrap_width">;
@@ -11007,8 +10971,7 @@ declare namespace imports.gi.Gtk {
 	type ContainerInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IContainer,
 		"border_width" |
-		"resize_mode" |
-		"widget">;
+		"resize_mode">;
 
 	export interface ContainerInitOptions extends ContainerInitOptionsMixin {}
 
@@ -11666,8 +11629,7 @@ declare namespace imports.gi.Gtk {
 
 	type DialogInitOptionsMixin = WindowInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IDialog,
-		"use_header_bar" |
-		"window">;
+		"use_header_bar">;
 
 	export interface DialogInitOptions extends DialogInitOptionsMixin {}
 
@@ -11860,10 +11822,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type DrawingAreaInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<IDrawingArea,
-		"widget">;
-
+	type DrawingAreaInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface DrawingAreaInitOptions extends DrawingAreaInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -13169,7 +13128,6 @@ declare namespace imports.gi.Gtk {
 		"buffer" |
 		"caps_lock_warning" |
 		"completion" |
-		"cursor_position" |
 		"editable" |
 		"enable_emoji_completion" |
 		"has_frame" |
@@ -13190,27 +13148,22 @@ declare namespace imports.gi.Gtk {
 		"primary_icon_pixbuf" |
 		"primary_icon_sensitive" |
 		"primary_icon_stock" |
-		"primary_icon_storage_type" |
 		"primary_icon_tooltip_markup" |
 		"primary_icon_tooltip_text" |
 		"progress_fraction" |
 		"progress_pulse_step" |
-		"scroll_offset" |
 		"secondary_icon_activatable" |
 		"secondary_icon_gicon" |
 		"secondary_icon_name" |
 		"secondary_icon_pixbuf" |
 		"secondary_icon_sensitive" |
 		"secondary_icon_stock" |
-		"secondary_icon_storage_type" |
 		"secondary_icon_tooltip_markup" |
 		"secondary_icon_tooltip_text" |
-		"selection_bound" |
 		"shadow_type" |
 		"show_emoji_icon" |
 		"tabs" |
 		"text" |
-		"text_length" |
 		"truncate_multiline" |
 		"visibility" |
 		"width_chars" |
@@ -13475,7 +13428,6 @@ declare namespace imports.gi.Gtk {
 
 	type EntryBufferInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IEntryBuffer,
-		"length" |
 		"max_length" |
 		"text">;
 
@@ -14002,8 +13954,7 @@ declare namespace imports.gi.Gtk {
 	type EventBoxInitOptionsMixin = BinInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IEventBox,
 		"above_child" |
-		"visible_window" |
-		"bin">;
+		"visible_window">;
 
 	export interface EventBoxInitOptions extends EventBoxInitOptionsMixin {}
 
@@ -14538,8 +14489,7 @@ declare namespace imports.gi.Gtk {
 		"resize_toplevel" |
 		"spacing" |
 		"use_markup" |
-		"use_underline" |
-		"bin">;
+		"use_underline">;
 
 	export interface ExpanderInitOptions extends ExpanderInitOptionsMixin {}
 
@@ -15457,8 +15407,7 @@ declare namespace imports.gi.Gtk {
 
 	type FileChooserWidgetInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & FileChooserInitOptions & OrientableInitOptions & 
 	Pick<IFileChooserWidget,
-		"search_mode" |
-		"subtitle">;
+		"search_mode">;
 
 	export interface FileChooserWidgetInitOptions extends FileChooserWidgetInitOptionsMixin {}
 
@@ -15690,10 +15639,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type FixedInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<IFixed,
-		"container">;
-
+	type FixedInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface FixedInitOptions extends FixedInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -16174,8 +16120,7 @@ declare namespace imports.gi.Gtk {
 		"max_children_per_line" |
 		"min_children_per_line" |
 		"row_spacing" |
-		"selection_mode" |
-		"container">;
+		"selection_mode">;
 
 	export interface FlowBoxInitOptions extends FlowBoxInitOptionsMixin {}
 
@@ -16498,8 +16443,7 @@ declare namespace imports.gi.Gtk {
 		"show_style" |
 		"title" |
 		"use_font" |
-		"use_size" |
-		"button">;
+		"use_size">;
 
 	export interface FontButtonInitOptions extends FontButtonInitOptionsMixin {}
 
@@ -16590,10 +16534,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type FontChooserWidgetInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & FontChooserInitOptions & OrientableInitOptions & 
-	Pick<IFontChooserWidget,
-		"tweak_action">;
-
+	type FontChooserWidgetInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & FontChooserInitOptions & OrientableInitOptions
 	export interface FontChooserWidgetInitOptions extends FontChooserWidgetInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -16982,8 +16923,7 @@ declare namespace imports.gi.Gtk {
 		"label_widget" |
 		"label_xalign" |
 		"label_yalign" |
-		"shadow_type" |
-		"bin">;
+		"shadow_type">;
 
 	export interface FrameInitOptions extends FrameInitOptionsMixin {}
 
@@ -17321,7 +17261,6 @@ declare namespace imports.gi.Gtk {
 	type GLAreaInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IGLArea,
 		"auto_render" |
-		"context" |
 		"has_alpha" |
 		"has_depth_buffer" |
 		"has_stencil_buffer" |
@@ -18745,10 +18684,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type HBoxInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IHBox,
-		"box">;
-
+	type HBoxInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface HBoxInitOptions extends HBoxInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -18803,10 +18739,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type HButtonBoxInitOptionsMixin = ButtonBoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IHButtonBox,
-		"button_box">;
-
+	type HButtonBoxInitOptionsMixin = ButtonBoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface HButtonBoxInitOptions extends HButtonBoxInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -18838,10 +18771,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type HPanedInitOptionsMixin = PanedInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IHPaned,
-		"paned">;
-
+	type HPanedInitOptionsMixin = PanedInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface HPanedInitOptions extends HPanedInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -18975,10 +18905,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type HScaleInitOptionsMixin = ScaleInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IHScale,
-		"scale">;
-
+	type HScaleInitOptionsMixin = ScaleInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface HScaleInitOptions extends HScaleInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -19039,10 +18966,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type HScrollbarInitOptionsMixin = ScrollbarInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IHScrollbar,
-		"scrollbar">;
-
+	type HScrollbarInitOptionsMixin = ScrollbarInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface HScrollbarInitOptions extends HScrollbarInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -19085,10 +19009,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type HSeparatorInitOptionsMixin = SeparatorInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IHSeparator,
-		"separator">;
-
+	type HSeparatorInitOptionsMixin = SeparatorInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface HSeparatorInitOptions extends HSeparatorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -19246,12 +19167,10 @@ declare namespace imports.gi.Gtk {
 
 	type HandleBoxInitOptionsMixin = BinInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IHandleBox,
-		"child_detached" |
 		"handle_position" |
 		"shadow_type" |
 		"snap_edge" |
-		"snap_edge_set" |
-		"bin">;
+		"snap_edge_set">;
 
 	export interface HandleBoxInitOptions extends HandleBoxInitOptionsMixin {}
 
@@ -19475,8 +19394,7 @@ declare namespace imports.gi.Gtk {
 		"show_close_button" |
 		"spacing" |
 		"subtitle" |
-		"title" |
-		"container">;
+		"title">;
 
 	export interface HeaderBarInitOptions extends HeaderBarInitOptionsMixin {}
 
@@ -19861,10 +19779,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type IMContextSimpleInitOptionsMixin = IMContextInitOptions & 
-	Pick<IIMContextSimple,
-		"object">;
-
+	type IMContextSimpleInitOptionsMixin = IMContextInitOptions
 	export interface IMContextSimpleInitOptions extends IMContextSimpleInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -19936,10 +19851,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type IMMulticontextInitOptionsMixin = IMContextInitOptions & 
-	Pick<IIMMulticontext,
-		"object">;
-
+	type IMMulticontextInitOptionsMixin = IMContextInitOptions
 	export interface IMMulticontextInitOptions extends IMMulticontextInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -22015,10 +21927,8 @@ declare namespace imports.gi.Gtk {
 		"pixel_size" |
 		"resource" |
 		"stock" |
-		"storage_type" |
 		"surface" |
-		"use_fallback" |
-		"misc">;
+		"use_fallback">;
 
 	export interface ImageInitOptions extends ImageInitOptionsMixin {}
 
@@ -22394,8 +22304,7 @@ declare namespace imports.gi.Gtk {
 	Pick<IImageMenuItem,
 		"always_show_image" |
 		"image" |
-		"use_stock" |
-		"menu_item">;
+		"use_stock">;
 
 	export interface ImageMenuItemInitOptions extends ImageMenuItemInitOptionsMixin {}
 
@@ -22795,8 +22704,7 @@ declare namespace imports.gi.Gtk {
 
 	type InvisibleInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IInvisible,
-		"screen" |
-		"widget">;
+		"screen">;
 
 	export interface InvisibleInitOptions extends InvisibleInitOptionsMixin {}
 
@@ -23451,16 +23359,13 @@ declare namespace imports.gi.Gtk {
 	Pick<ILabel,
 		"angle" |
 		"attributes" |
-		"cursor_position" |
 		"ellipsize" |
 		"justify" |
 		"label" |
 		"lines" |
 		"max_width_chars" |
-		"mnemonic_keyval" |
 		"mnemonic_widget" |
 		"selectable" |
-		"selection_bound" |
 		"single_line_mode" |
 		"track_visited_links" |
 		"use_markup" |
@@ -23469,8 +23374,7 @@ declare namespace imports.gi.Gtk {
 		"wrap" |
 		"wrap_mode" |
 		"xalign" |
-		"yalign" |
-		"misc">;
+		"yalign">;
 
 	export interface LabelInitOptions extends LabelInitOptionsMixin {}
 
@@ -23811,8 +23715,7 @@ declare namespace imports.gi.Gtk {
 	type LayoutInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & ScrollableInitOptions & 
 	Pick<ILayout,
 		"height" |
-		"width" |
-		"container">;
+		"width">;
 
 	export interface LayoutInitOptions extends LayoutInitOptionsMixin {}
 
@@ -25794,8 +25697,7 @@ declare namespace imports.gi.Gtk {
 		"rect_anchor_dy" |
 		"reserve_toggle_size" |
 		"tearoff_state" |
-		"tearoff_title" |
-		"menu_shell">;
+		"tearoff_title">;
 
 	export interface MenuInitOptions extends MenuInitOptionsMixin {}
 
@@ -25977,8 +25879,7 @@ declare namespace imports.gi.Gtk {
 	type MenuBarInitOptionsMixin = MenuShellInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IMenuBar,
 		"child_pack_direction" |
-		"pack_direction" |
-		"menu_shell">;
+		"pack_direction">;
 
 	export interface MenuBarInitOptions extends MenuBarInitOptionsMixin {}
 
@@ -26498,8 +26399,7 @@ declare namespace imports.gi.Gtk {
 		"label" |
 		"right_justified" |
 		"submenu" |
-		"use_underline" |
-		"bin">;
+		"use_underline">;
 
 	export interface MenuItemInitOptions extends MenuItemInitOptionsMixin {}
 
@@ -26864,8 +26764,7 @@ declare namespace imports.gi.Gtk {
 
 	type MenuShellInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IMenuShell,
-		"take_focus" |
-		"container">;
+		"take_focus">;
 
 	export interface MenuShellInitOptions extends MenuShellInitOptionsMixin {}
 
@@ -27155,7 +27054,6 @@ declare namespace imports.gi.Gtk {
 	type MessageDialogInitOptionsMixin = DialogInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IMessageDialog,
 		"image" |
-		"message_area" |
 		"message_type" |
 		"secondary_text" |
 		"secondary_use_markup" |
@@ -27375,8 +27273,7 @@ declare namespace imports.gi.Gtk {
 		"xalign" |
 		"xpad" |
 		"yalign" |
-		"ypad" |
-		"widget">;
+		"ypad">;
 
 	export interface MiscInitOptions extends MiscInitOptionsMixin {}
 
@@ -27645,7 +27542,6 @@ declare namespace imports.gi.Gtk {
 
 	type MountOperationInitOptionsMixin = Gio.MountOperationInitOptions & 
 	Pick<IMountOperation,
-		"is_showing" |
 		"screen">;
 
 	export interface MountOperationInitOptions extends MountOperationInitOptionsMixin {}
@@ -28691,10 +28587,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type OffscreenWindowInitOptionsMixin = WindowInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<IOffscreenWindow,
-		"parent_object">;
-
+	type OffscreenWindowInitOptionsMixin = WindowInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface OffscreenWindowInitOptions extends OffscreenWindowInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -29411,12 +29304,9 @@ declare namespace imports.gi.Gtk {
 
 	type PanedInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
 	Pick<IPaned,
-		"max_position" |
-		"min_position" |
 		"position" |
 		"position_set" |
-		"wide_handle" |
-		"container">;
+		"wide_handle">;
 
 	export interface PanedInitOptions extends PanedInitOptionsMixin {}
 
@@ -30118,12 +30008,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type PlugInitOptionsMixin = WindowInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<IPlug,
-		"embedded" |
-		"socket_window" |
-		"window">;
-
+	type PlugInitOptionsMixin = WindowInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface PlugInitOptions extends PlugInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -31527,11 +31412,8 @@ declare namespace imports.gi.Gtk {
 		"has_selection" |
 		"job_name" |
 		"n_pages" |
-		"n_pages_to_print" |
 		"print_settings" |
 		"show_progress" |
-		"status" |
-		"status_string" |
 		"support_selection" |
 		"track_print_status" |
 		"unit" |
@@ -32533,10 +32415,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type RadioButtonInitOptionsMixin = CheckButtonInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions & 
-	Pick<IRadioButton,
-		"check_button">;
-
+	type RadioButtonInitOptionsMixin = CheckButtonInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions
 	export interface RadioButtonInitOptions extends RadioButtonInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -32762,10 +32641,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type RadioMenuItemInitOptionsMixin = CheckMenuItemInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions & 
-	Pick<IRadioMenuItem,
-		"check_menu_item">;
-
+	type RadioMenuItemInitOptionsMixin = CheckMenuItemInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions
 	export interface RadioMenuItemInitOptions extends RadioMenuItemInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -33295,8 +33171,7 @@ declare namespace imports.gi.Gtk {
 		"restrict_to_fill_level" |
 		"round_digits" |
 		"show_fill_level" |
-		"upper_stepper_sensitivity" |
-		"widget">;
+		"upper_stepper_sensitivity">;
 
 	export interface RangeInitOptions extends RangeInitOptionsMixin {}
 
@@ -33408,19 +33283,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type RcStyleInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IRcStyle,
-		"name" |
-		"bg_pixmap_name" |
-		"font_desc" |
-		"color_flags" |
-		"fg" |
-		"bg" |
-		"text" |
-		"base" |
-		"xthickness" |
-		"ythickness">;
-
+	type RcStyleInitOptionsMixin = GObject.ObjectInitOptions
 	export interface RcStyleInitOptions extends RcStyleInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -34048,8 +33911,7 @@ declare namespace imports.gi.Gtk {
 
 	type RecentManagerInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IRecentManager,
-		"filename" |
-		"size">;
+		"filename">;
 
 	export interface RecentManagerInitOptions extends RecentManagerInitOptionsMixin {}
 
@@ -34238,7 +34100,6 @@ declare namespace imports.gi.Gtk {
 
 	type RevealerInitOptionsMixin = BinInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IRevealer,
-		"child_revealed" |
 		"reveal_child" |
 		"transition_duration" |
 		"transition_type">;
@@ -34426,8 +34287,7 @@ declare namespace imports.gi.Gtk {
 		"digits" |
 		"draw_value" |
 		"has_origin" |
-		"value_pos" |
-		"range">;
+		"value_pos">;
 
 	export interface ScaleInitOptions extends ScaleInitOptionsMixin {}
 
@@ -34757,10 +34617,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type ScrollbarInitOptionsMixin = RangeInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IScrollbar,
-		"range">;
-
+	type ScrollbarInitOptionsMixin = RangeInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface ScrollbarInitOptions extends ScrollbarInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -35246,8 +35103,7 @@ declare namespace imports.gi.Gtk {
 		"vadjustment" |
 		"vscrollbar_policy" |
 		"window_placement" |
-		"window_placement_set" |
-		"container">;
+		"window_placement_set">;
 
 	export interface ScrolledWindowInitOptions extends ScrolledWindowInitOptionsMixin {}
 
@@ -35649,10 +35505,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type SeparatorInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<ISeparator,
-		"widget">;
-
+	type SeparatorInitOptionsMixin = WidgetInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface SeparatorInitOptions extends SeparatorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -35693,10 +35546,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type SeparatorMenuItemInitOptionsMixin = MenuItemInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions & 
-	Pick<ISeparatorMenuItem,
-		"menu_item">;
-
+	type SeparatorMenuItemInitOptionsMixin = MenuItemInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions
 	export interface SeparatorMenuItemInitOptions extends SeparatorMenuItemInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -36404,7 +36254,6 @@ declare namespace imports.gi.Gtk {
 
 	type SettingsInitOptionsMixin = GObject.ObjectInitOptions & StyleProviderInitOptions & 
 	Pick<ISettings,
-		"color_hash" |
 		"gtk_alternative_button_order" |
 		"gtk_alternative_sort_arrows" |
 		"gtk_application_prefer_dark_theme" |
@@ -36654,7 +36503,6 @@ declare namespace imports.gi.Gtk {
 
 	type ShortcutsGroupInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
 	Pick<IShortcutsGroup,
-		"height" |
 		"title" |
 		"view">;
 
@@ -36928,8 +36776,7 @@ declare namespace imports.gi.Gtk {
 	type ShortcutsWindowInitOptionsMixin = WindowInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
 	Pick<IShortcutsWindow,
 		"section_name" |
-		"view_name" |
-		"window">;
+		"view_name">;
 
 	export interface ShortcutsWindowInitOptions extends ShortcutsWindowInitOptionsMixin {}
 
@@ -37232,10 +37079,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type SocketInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & 
-	Pick<ISocket,
-		"container">;
-
+	type SocketInitOptionsMixin = ContainerInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions
 	export interface SocketInitOptions extends SocketInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -37588,8 +37432,7 @@ declare namespace imports.gi.Gtk {
 		"snap_to_ticks" |
 		"update_policy" |
 		"value" |
-		"wrap" |
-		"entry">;
+		"wrap">;
 
 	export interface SpinButtonInitOptions extends SpinButtonInitOptionsMixin {}
 
@@ -38041,7 +37884,6 @@ declare namespace imports.gi.Gtk {
 		"homogeneous" |
 		"interpolate_size" |
 		"transition_duration" |
-		"transition_running" |
 		"transition_type" |
 		"vhomogeneous" |
 		"visible_child" |
@@ -38200,8 +38042,7 @@ declare namespace imports.gi.Gtk {
 	type StackSwitcherInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
 	Pick<IStackSwitcher,
 		"icon_size" |
-		"stack" |
-		"widget">;
+		"stack">;
 
 	export interface StackSwitcherInitOptions extends StackSwitcherInitOptionsMixin {}
 
@@ -38842,16 +38683,12 @@ declare namespace imports.gi.Gtk {
 
 	type StatusIconInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IStatusIcon,
-		"embedded" |
 		"gicon" |
 		"has_tooltip" |
 		"icon_name" |
-		"orientation" |
 		"pixbuf" |
 		"screen" |
-		"size" |
 		"stock" |
-		"storage_type" |
 		"title" |
 		"tooltip_markup" |
 		"tooltip_text" |
@@ -39068,10 +38905,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type StatusbarInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IStatusbar,
-		"parent_widget">;
-
+	type StatusbarInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface StatusbarInitOptions extends StatusbarInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -39375,21 +39209,7 @@ declare namespace imports.gi.Gtk {
 
 	type StyleInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IStyle,
-		"context" |
-		"fg" |
-		"bg" |
-		"light" |
-		"dark" |
-		"mid" |
-		"text" |
-		"base" |
-		"text_aa" |
-		"black" |
-		"white" |
-		"font_desc" |
-		"xthickness" |
-		"ythickness" |
-		"background">;
+		"context">;
 
 	export interface StyleInitOptions extends StyleInitOptionsMixin {}
 
@@ -40055,8 +39875,7 @@ declare namespace imports.gi.Gtk {
 	Pick<IStyleContext,
 		"direction" |
 		"paint_clock" |
-		"screen" |
-		"parent_object">;
+		"screen">;
 
 	export interface StyleContextInitOptions extends StyleContextInitOptionsMixin {}
 
@@ -40692,8 +40511,7 @@ declare namespace imports.gi.Gtk {
 		"homogeneous" |
 		"n_columns" |
 		"n_rows" |
-		"row_spacing" |
-		"container">;
+		"row_spacing">;
 
 	export interface TableInitOptions extends TableInitOptionsMixin {}
 
@@ -40760,10 +40578,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type TearoffMenuItemInitOptionsMixin = MenuItemInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions & 
-	Pick<ITearoffMenuItem,
-		"menu_item">;
-
+	type TearoffMenuItemInitOptionsMixin = MenuItemInitOptions & Atk.ImplementorIfaceInitOptions & ActionableInitOptions & ActivatableInitOptions & BuildableInitOptions
 	export interface TearoffMenuItemInitOptions extends TearoffMenuItemInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -41856,10 +41671,6 @@ declare namespace imports.gi.Gtk {
 
 	type TextBufferInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<ITextBuffer,
-		"copy_target_list" |
-		"cursor_position" |
-		"has_selection" |
-		"paste_target_list" |
 		"tag_table" |
 		"text">;
 
@@ -43900,8 +43711,7 @@ declare namespace imports.gi.Gtk {
 
 	type ThemingEngineInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IThemingEngine,
-		"name" |
-		"parent_object">;
+		"name">;
 
 	export interface ThemingEngineInitOptions extends ThemingEngineInitOptionsMixin {}
 
@@ -45480,8 +45290,7 @@ declare namespace imports.gi.Gtk {
 		"icon_size" |
 		"icon_size_set" |
 		"show_arrow" |
-		"toolbar_style" |
-		"container">;
+		"toolbar_style">;
 
 	export interface ToolbarInitOptions extends ToolbarInitOptionsMixin {}
 
@@ -48293,9 +48102,7 @@ declare namespace imports.gi.Gtk {
 		"spacing" |
 		"title" |
 		"visible" |
-		"widget" |
-		"width" |
-		"x_offset">;
+		"widget">;
 
 	export interface TreeViewColumnInitOptions extends TreeViewColumnInitOptionsMixin {}
 
@@ -48632,8 +48439,7 @@ declare namespace imports.gi.Gtk {
 
 	type UIManagerInitOptionsMixin = GObject.ObjectInitOptions & BuildableInitOptions & 
 	Pick<IUIManager,
-		"add_tearoffs" |
-		"ui">;
+		"add_tearoffs">;
 
 	export interface UIManagerInitOptions extends UIManagerInitOptionsMixin {}
 
@@ -48890,10 +48696,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type VBoxInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IVBox,
-		"box">;
-
+	type VBoxInitOptionsMixin = BoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface VBoxInitOptions extends VBoxInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -48955,10 +48758,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type VButtonBoxInitOptionsMixin = ButtonBoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IVButtonBox,
-		"button_box">;
-
+	type VButtonBoxInitOptionsMixin = ButtonBoxInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface VButtonBoxInitOptions extends VButtonBoxInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -48990,10 +48790,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type VPanedInitOptionsMixin = PanedInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IVPaned,
-		"paned">;
-
+	type VPanedInitOptionsMixin = PanedInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface VPanedInitOptions extends VPanedInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -49033,10 +48830,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type VScaleInitOptionsMixin = ScaleInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IVScale,
-		"scale">;
-
+	type VScaleInitOptionsMixin = ScaleInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface VScaleInitOptions extends VScaleInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -49096,10 +48890,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type VScrollbarInitOptionsMixin = ScrollbarInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IVScrollbar,
-		"scrollbar">;
-
+	type VScrollbarInitOptionsMixin = ScrollbarInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface VScrollbarInitOptions extends VScrollbarInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -49142,10 +48933,7 @@ declare namespace imports.gi.Gtk {
 
 	}
 
-	type VSeparatorInitOptionsMixin = SeparatorInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions & 
-	Pick<IVSeparator,
-		"separator">;
-
+	type VSeparatorInitOptionsMixin = SeparatorInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & OrientableInitOptions
 	export interface VSeparatorInitOptions extends VSeparatorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -49240,8 +49028,7 @@ declare namespace imports.gi.Gtk {
 
 	type ViewportInitOptionsMixin = BinInitOptions & Atk.ImplementorIfaceInitOptions & BuildableInitOptions & ScrollableInitOptions & 
 	Pick<IViewport,
-		"shadow_type" |
-		"bin">;
+		"shadow_type">;
 
 	export interface ViewportInitOptions extends ViewportInitOptionsMixin {}
 
@@ -53765,7 +53552,6 @@ declare namespace imports.gi.Gtk {
 		"app_paintable" |
 		"can_default" |
 		"can_focus" |
-		"composite_child" |
 		"double_buffered" |
 		"events" |
 		"expand" |
@@ -53789,7 +53575,6 @@ declare namespace imports.gi.Gtk {
 		"no_show_all" |
 		"opacity" |
 		"receives_default" |
-		"scale_factor" |
 		"sensitive" |
 		"style" |
 		"tooltip_markup" |
@@ -53798,8 +53583,7 @@ declare namespace imports.gi.Gtk {
 		"vexpand" |
 		"vexpand_set" |
 		"visible" |
-		"width_request" |
-		"window">;
+		"width_request">;
 
 	export interface WidgetInitOptions extends WidgetInitOptionsMixin {}
 
@@ -55839,16 +55623,12 @@ declare namespace imports.gi.Gtk {
 		"focus_visible" |
 		"gravity" |
 		"has_resize_grip" |
-		"has_toplevel_focus" |
 		"hide_titlebar_when_maximized" |
 		"icon" |
 		"icon_name" |
-		"is_active" |
-		"is_maximized" |
 		"mnemonics_visible" |
 		"modal" |
 		"resizable" |
-		"resize_grip_visible" |
 		"role" |
 		"screen" |
 		"skip_pager_hint" |
@@ -55858,8 +55638,7 @@ declare namespace imports.gi.Gtk {
 		"type" |
 		"type_hint" |
 		"urgency_hint" |
-		"window_position" |
-		"bin">;
+		"window_position">;
 
 	export interface WindowInitOptions extends WindowInitOptionsMixin {}
 
@@ -62977,7 +62756,6 @@ declare namespace imports.gi.Gtk {
 	type FontChooserInitOptionsMixin = Pick<IFontChooser,
 		"font" |
 		"font_desc" |
-		"font_features" |
 		"language" |
 		"level" |
 		"preview_text" |

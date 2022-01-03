@@ -974,10 +974,7 @@ declare namespace imports.gi.WebKit2 {
 
 	type DownloadInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IDownload,
-		"allow_overwrite" |
-		"destination" |
-		"estimated_progress" |
-		"response">;
+		"allow_overwrite">;
 
 	export interface DownloadInitOptions extends DownloadInitOptionsMixin {}
 
@@ -1039,10 +1036,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type EditorStateInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IEditorState,
-		"typing_attributes">;
-
+	type EditorStateInitOptionsMixin = GObject.ObjectInitOptions
 	export interface EditorStateInitOptions extends EditorStateInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -1234,13 +1228,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type FileChooserRequestInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IFileChooserRequest,
-		"filter" |
-		"mime_types" |
-		"select_multiple" |
-		"selected_files">;
-
+	type FileChooserRequestInitOptionsMixin = GObject.ObjectInitOptions
 	export interface FileChooserRequestInitOptions extends FileChooserRequestInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -1411,9 +1399,6 @@ declare namespace imports.gi.WebKit2 {
 
 	type FindControllerInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IFindController,
-		"max_match_count" |
-		"options" |
-		"text" |
 		"web_view">;
 
 	export interface FindControllerInitOptions extends FindControllerInitOptionsMixin {}
@@ -1539,10 +1524,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type GeolocationManagerInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IGeolocationManager,
-		"enable_high_accuracy">;
-
+	type GeolocationManagerInitOptionsMixin = GObject.ObjectInitOptions
 	export interface GeolocationManagerInitOptions extends GeolocationManagerInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -2022,15 +2004,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type NavigationPolicyDecisionInitOptionsMixin = PolicyDecisionInitOptions & 
-	Pick<INavigationPolicyDecision,
-		"frame_name" |
-		"modifiers" |
-		"mouse_button" |
-		"navigation_action" |
-		"navigation_type" |
-		"request">;
-
+	type NavigationPolicyDecisionInitOptionsMixin = PolicyDecisionInitOptions
 	export interface NavigationPolicyDecisionInitOptions extends NavigationPolicyDecisionInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -2122,13 +2096,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type NotificationInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<INotification,
-		"body" |
-		"id" |
-		"tag" |
-		"title">;
-
+	type NotificationInitOptionsMixin = GObject.ObjectInitOptions
 	export interface NotificationInitOptions extends NotificationInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -2586,11 +2554,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type ResponsePolicyDecisionInitOptionsMixin = PolicyDecisionInitOptions & 
-	Pick<IResponsePolicyDecision,
-		"request" |
-		"response">;
-
+	type ResponsePolicyDecisionInitOptionsMixin = PolicyDecisionInitOptions
 	export interface ResponsePolicyDecisionInitOptions extends ResponsePolicyDecisionInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -3971,15 +3935,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type URIResponseInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IURIResponse,
-		"content_length" |
-		"http_headers" |
-		"mime_type" |
-		"status_code" |
-		"suggested_filename" |
-		"uri">;
-
+	type URIResponseInitOptionsMixin = GObject.ObjectInitOptions
 	export interface URIResponseInitOptions extends URIResponseInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -4356,11 +4312,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type UserMediaPermissionRequestInitOptionsMixin = GObject.ObjectInitOptions & PermissionRequestInitOptions & 
-	Pick<IUserMediaPermissionRequest,
-		"is_for_audio_device" |
-		"is_for_video_device">;
-
+	type UserMediaPermissionRequestInitOptionsMixin = GObject.ObjectInitOptions & PermissionRequestInitOptions
 	export interface UserMediaPermissionRequestInitOptions extends UserMediaPermissionRequestInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -5187,12 +5139,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type WebInspectorInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IWebInspector,
-		"attached_height" |
-		"can_attach" |
-		"inspected_uri">;
-
+	type WebInspectorInitOptionsMixin = GObject.ObjectInitOptions
 	export interface WebInspectorInitOptions extends WebInspectorInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -5343,11 +5290,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type WebResourceInitOptionsMixin = GObject.ObjectInitOptions & 
-	Pick<IWebResource,
-		"response" |
-		"uri">;
-
+	type WebResourceInitOptionsMixin = GObject.ObjectInitOptions
 	export interface WebResourceInitOptions extends WebResourceInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,
@@ -6831,16 +6774,9 @@ declare namespace imports.gi.WebKit2 {
 	Pick<IWebView,
 		"automation_presentation_type" |
 		"editable" |
-		"estimated_load_progress" |
-		"favicon" |
 		"is_controlled_by_automation" |
 		"is_ephemeral" |
-		"is_loading" |
 		"is_muted" |
-		"is_playing_audio" |
-		"page_id" |
-		"title" |
-		"uri" |
 		"user_content_manager" |
 		"web_context" |
 		"website_policies" |
@@ -6918,10 +6854,7 @@ declare namespace imports.gi.WebKit2 {
 
 	}
 
-	type WebViewBaseInitOptionsMixin = Gtk.ContainerInitOptions & Atk.ImplementorIfaceInitOptions & Gtk.BuildableInitOptions & 
-	Pick<IWebViewBase,
-		"parentInstance">;
-
+	type WebViewBaseInitOptionsMixin = Gtk.ContainerInitOptions & Atk.ImplementorIfaceInitOptions & Gtk.BuildableInitOptions
 	export interface WebViewBaseInitOptions extends WebViewBaseInitOptionsMixin {}
 
 	/** This construct is only for enabling class multi-inheritance,

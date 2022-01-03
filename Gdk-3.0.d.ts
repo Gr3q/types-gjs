@@ -788,19 +788,15 @@ declare namespace imports.gi.Gdk {
 
 	type DeviceInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IDevice,
-		"associated_device" |
-		"axes" |
 		"device_manager" |
 		"display" |
 		"has_cursor" |
 		"input_mode" |
 		"input_source" |
-		"n_axes" |
 		"name" |
 		"num_touches" |
 		"product_id" |
 		"seat" |
-		"tool" |
 		"type" |
 		"vendor_id">;
 
@@ -2851,16 +2847,7 @@ declare namespace imports.gi.Gdk {
 
 	type MonitorInitOptionsMixin = GObject.ObjectInitOptions & 
 	Pick<IMonitor,
-		"display" |
-		"geometry" |
-		"height_mm" |
-		"manufacturer" |
-		"model" |
-		"refresh_rate" |
-		"scale_factor" |
-		"subpixel_layout" |
-		"width_mm" |
-		"workarea">;
+		"display">;
 
 	export interface MonitorInitOptions extends MonitorInitOptionsMixin {}
 
