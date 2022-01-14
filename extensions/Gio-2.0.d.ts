@@ -1,4 +1,3 @@
-// See: https://gitlab.gnome.org/GNOME/gjs/-/blob/master/modules/core/overrides/Gio.js
 declare namespace imports.gi.Gio {
 	interface IDBusProxy {
 		disconnectSignal(id: number): void;
