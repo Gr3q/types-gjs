@@ -1,5 +1,9 @@
 # types-gjs
 
+**This repo was a dependency of [GitHub - Gr3q/types-cjs: Typescript declarations for CJS - Cinnamon JavaScript](https://github.com/Gr3q/types-cjs) and now deprecated. If I have free time and inclination I will unarchive this Repo and create the correct declarations for Gnome DE.**
+
+
+
 Typescript definitions for GJS - Gnome JavaScript
 
 Generated with [GitHub - Gr3q/GIR2TS: TypeScript declaration generator for GObject Introspection.](https://github.com/Gr3q/GIR2TS) and manually cleaned up.
